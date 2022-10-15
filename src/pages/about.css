@@ -1,0 +1,73 @@
+.home_main2 {
+  width: 80%;
+  margin: 0 auto;
+  padding: var(--size-large3);
+  color: var(--dark4);
+}
+
+.home_main2 h2 {
+  text-decoration: underline;
+}
+
+.home_main2 h1 {
+  text-align: center;
+}
+
+.home_main2 .first-section {
+  font-family: "Montserrat", sans-serif;
+  margin: var(--size3);
+  font-size: var(--size5);
+  font-weight: 500;
+  color: var(--dark5);
+}
+.home_main2 .first-section .learning-platforms {
+  font-weight: 700;
+  padding: 0 4px;
+}
+.home_main2 .second-section {
+  font-family: "Montserrat", sans-serif;
+  margin: var(--size5);
+  font-size: var(--size5);
+  font-weight: 500;
+  color: var(--dark5);
+}
+
+.home_main2 .code_emphasy {
+  font-family: "Montserrat", sans-serif;
+  margin: var(--size5);
+  font-size: var(--size5);
+  font-weight: 500;
+  color: var(--dark5);
+}
+
+.home_main2 .third-section {
+  font-family: "Montserrat", sans-serif;
+  margin: var(--size5);
+  font-size: var(--size5);
+  font-weight: 500;
+  color: var(--dark5);
+}
+
+.home_main2 .third-section h2 {
+  font-size: var(--size);
+  text-decoration: underline;
+}
+
+.home_main2 .four-section {
+  font-family: "Montserrat", sans-serif;
+  margin: var(--size3);
+  font-size: var(--size5);
+  font-weight: 500;
+  color: var(--dark5);
+}
+
+.home_main2 .four-section h2 {
+  font-size: var(--size);
+  text-decoration: underline;
+}
+
+.see-soon {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--dark5);
+}
