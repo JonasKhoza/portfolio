@@ -4,7 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/dist
+/.idea
+/npm-debug.log
 # testing
 /coverage
 
