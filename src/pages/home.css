@@ -267,8 +267,9 @@
   }
 }
 
-@media screen and (max-width: 468px) {
-  .third_section .projects ol {
+@media screen and (max-width: 400px) {
+  .third_section .projects .project ol {
+    display: flex;
     flex-direction: column;
   }
 }
