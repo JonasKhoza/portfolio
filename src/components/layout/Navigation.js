@@ -6,7 +6,10 @@ function Navigation({ isNotOpen, openHamburgerMenu }) {
     <header className="main_header">
       <nav>
         <ul>
-          <Link to="/">Home</Link>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+
           <li>
             <Link to="/projects">Projects</Link>
           </li>

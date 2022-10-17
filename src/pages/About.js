@@ -1,6 +1,7 @@
 import "./about.css";
 
 function About() {
+  document.title = "About";
   return (
     <main className="home_main2">
       <h1>My quick story</h1>

@@ -1,7 +1,7 @@
 .home {
   width: 100%;
   margin: 0 auto;
-  padding: var(--size-large3);
+  padding: var(--size-large);
   color: var(--dark4);
 }
 
@@ -28,6 +28,7 @@
 
 .home .first_project .projec_desc {
   width: 100%;
+  white-space: pre-wrap;
 }
 
 .home .first_project .projec_desc ul {
@@ -53,12 +54,20 @@
 }
 
 .home .first_project .projec_desc .live_demo {
-  font-size: var(--size5);
+  font-size: var(--size4);
   font-weight: 600;
 }
 
+.home .first_project .projec_desc .live_demo:hover {
+  color: blue;
+  font-size: var(--size5);
+}
+.home .first_project .image_container {
+  width: 35rem;
+}
+
 .home .first_project img {
-  width: 40rem;
+  width: 100%;
 }
 
 @media screen and (max-width: 1450px) {
@@ -69,16 +78,21 @@
 }
 
 @media screen and (max-width: 1250px) {
-  .home .first_project img {
+  .home .first_project .image_container {
     width: 30rem;
-    height: 15rem;
+  }
+
+  .home .first_project {
+    display: flex;
+    gap: var(--size-large);
+    font-size: var(--favorite);
+    margin: var(--size-large);
   }
 }
 
 @media screen and (max-width: 1150px) {
-  .home .first_project img {
-    width: 20rem;
-    height: 10rem;
+  .home .first_project .image_container {
+    width: 35rem;
   }
 }
 @media screen and (max-width: 978px) {
@@ -86,9 +100,8 @@
     padding: 0;
   }
 
-  .home .first_project img {
-    width: 16rem;
-    height: 8rem;
+  .home .first_project .image_container {
+    width: 35rem;
   }
 }
 
@@ -96,17 +109,33 @@
   .home .first_project {
     flex-direction: column;
     gap: var(--size3);
+    font-size: var(--favorite);
+    margin: 0 auto;
   }
+
   .home .first_project .projec_desc ul {
     grid-template-columns: 1fr;
     gap: 0;
     width: 50%;
   }
+
+  .home .first_project .image_container {
+    width: 30rem;
+  }
 }
 
-@media screen and (max-width: 400px) {
-  .home .first_project img {
-    width: 10rem;
-    height: 6rem;
+@media screen and (max-width: 468px) {
+  .home {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    color: var(--dark4);
+  }
+
+  .home .first_project {
+    display: flex;
+    gap: var(--size-large1);
+    font-size: var(--favorite);
+    margin: 0 auto;
   }
 }

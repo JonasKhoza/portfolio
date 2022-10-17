@@ -24,6 +24,7 @@
 
 .main_header nav ul a:hover {
   border-bottom: 1px solid var(--main-color);
+  padding: 0;
 }
 
 header nav + .hamburger {

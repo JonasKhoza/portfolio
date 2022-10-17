@@ -3,6 +3,7 @@ import projects from "../data/data";
 import "./home.css";
 
 function Home() {
+  document.title = "Home";
   return (
     <main className="home_main">
       <section className="first_section">
@@ -60,7 +61,11 @@ function Home() {
               <Link to="/about" className="read_more">
                 read more...
               </Link>
-              <a href="" className="resume">
+              <a
+                href="https://drive.google.com/file/d/10sUpEKlynAZ9C-jLKxM9KERk1P91JE88/view?usp=sharing"
+                target="_blank"
+                className="resume"
+              >
                 View my resume
               </a>
               &#128073;
@@ -71,35 +76,59 @@ function Home() {
             <h1>Skills</h1>
             <ul>
               <li>
-                <img src="/images/languages/html5-logo.png" alt="HTML5 ICON" />
-                <span>HTML5</span>
+                <a href="https://html.com/" target="_blank">
+                  <img
+                    src="/images/languages/html5-logo.png"
+                    alt="HTML5 ICON"
+                  />
+                  <span>HTML5</span>
+                </a>
               </li>
 
               <li>
-                <img src="/images/languages/CSS3.png" alt="CSS3 ICON" />
-                <span>CSS3</span>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                  target="_blank"
+                >
+                  <img src="/images/languages/CSS3.png" alt="CSS3 ICON" />
+                  <span>CSS3</span>
+                </a>
               </li>
               <li>
-                <img
-                  src="/images/languages/javascript-icon.png"
-                  alt="Javascript Icon"
-                />
-                <span>Javascript</span>
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  target="_blank"
+                >
+                  <img
+                    src="/images/languages/javascript-icon.png"
+                    alt="Javascript Icon"
+                  />
+                  <span>Javascript</span>
+                </a>
               </li>
               <li>
-                <img src="/images/languages/React-icon.png" alt="React Icon" />
-                <span>React</span>
+                <a href="https://reactjs.org/" target="_blank">
+                  <img
+                    src="/images/languages/React-icon.png"
+                    alt="React Icon"
+                  />
+                  <span>React</span>
+                </a>
               </li>
               <li>
-                <img src="/images/languages/Node.jpg" alt="Javascript Icon" />
-                <span>Node with Express</span>
+                <a href="https://expressjs.com/" target="_blank">
+                  <img src="/images/languages/Node.jpg" alt="Javascript Icon" />
+                  <span>Node with Express</span>
+                </a>
               </li>
               <li>
-                <img
-                  src="/images/languages/mongodb-logo.png"
-                  alt="MongoDB Icon"
-                />
-                <span>MongoDB</span>
+                <a href="https://www.mongodb.com/" target="_blank">
+                  <img
+                    src="/images/languages/mongodb-logo.png"
+                    alt="MongoDB Icon"
+                  />
+                  <span>MongoDB</span>
+                </a>
               </li>
             </ul>
           </div>

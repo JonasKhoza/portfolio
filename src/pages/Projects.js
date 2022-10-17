@@ -2,6 +2,7 @@ import projects from "../data/data";
 import "./projects.css";
 
 function Projects() {
+  document.title = "Projects";
   return (
     <main className="home">
       <h1>Projects</h1>
@@ -27,11 +28,23 @@ function Projects() {
                   )}
                 </ul>
                 <p>{project.full_description}</p>
-                <a href="" className="live_demo">
-                  Live Demo
-                </a>
+                {project.LiveDemo ? (
+                  <a href="" target="_blank" className="live_demo">
+                    Live Demo
+                  </a>
+                ) : (
+                  <a
+                    href={project.Githubrepo}
+                    target="_blank"
+                    className="live_demo"
+                  >
+                    Github repo
+                  </a>
+                )}
               </div>
-              <img src={project.image} alt="" />
+              <div className=".image_container">
+                <img src={project.image} alt="" />
+              </div>
             </div>
           );
         })}

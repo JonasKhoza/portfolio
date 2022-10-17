@@ -13,7 +13,7 @@ function Footer() {
               </a>
             </li>
             <li>
-              <Link to="">
+              <Link to="https://github.com/JonasKhoza" target="_blank">
                 <img src="/images/social/GitHub_Logo.png" alt="GitHub Icon" />
               </Link>
             </li>
