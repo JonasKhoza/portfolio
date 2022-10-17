@@ -61,7 +61,7 @@ The purpose of this project was to test my skills about React, react-router-dom 
       Firebase: "Firebase",
     },
     LiveDemo: "",
-    Githubrepo: "",
+    Githubrepo: "https://github.com/JonasKhoza/Meetup-React-App",
   },
   {
     id: 4,
