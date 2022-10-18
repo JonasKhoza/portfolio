@@ -157,7 +157,7 @@ function Home() {
                 return (
                   <div className="project" key={project.id}>
                     <div className="project_name">
-                      <Link to="/projects"> {project.name}</Link>
+                      <Link to="portfolio/projects"> {project.name}</Link>
                       <span>&#8658;</span>
                     </div>
 
@@ -191,7 +191,9 @@ function Home() {
           </div>
           <p className="other-projects">
             Checkout my other projects on my{" "}
-            <a href="https://github.com/JonasKhoza" target="_blank">GitHub</a>
+            <a href="https://github.com/JonasKhoza" target="_blank">
+              GitHub
+            </a>
           </p>
         </div>
       </section>
