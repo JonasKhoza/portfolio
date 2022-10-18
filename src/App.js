@@ -7,9 +7,18 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/about" element={<About />} />
+        <Route
+          path="https://jonaskhoza.github.io/portfolio/"
+          element={<Home />}
+        />
+        <Route
+          path="https://jonaskhoza.github.io/portfolio/projects"
+          element={<Projects />}
+        />
+        <Route
+          path="https://jonaskhoza.github.io/portfolio/about"
+          element={<About />}
+        />
       </Routes>
     </Layout>
   );
