@@ -97,7 +97,7 @@ I had to also restrict the abiity to access cookies from the browser-side as to 
       MongoDB: "MongoDB",
     },
     LiveDemo: "",
-    Githubrepo: "",
+    Githubrepo: "https://github.com/JonasKhoza/WEB-online-shop",
   },
 ];
 
