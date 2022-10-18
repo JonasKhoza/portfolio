@@ -92,7 +92,7 @@ I had to also restrict the abiity to access cookies from the browser-side as to 
       Html: "HTML",
       CSS: "CSS",
       JavaScript: "Javascript",
-      React: "",
+      React: "React",
       Node: "Express(EJS)",
       MongoDB: "MongoDB",
     },
