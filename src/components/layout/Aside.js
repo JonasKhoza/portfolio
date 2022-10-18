@@ -8,13 +8,17 @@ function Aside({ isNotOpen, openHamburgerMenu }) {
       <nav>
         <ul>
           <li onClick={openHamburgerMenu}>
-            <Link to="/">Home</Link>
+            <Link to="https://jonaskhoza.github.io/portfolio//">Home</Link>
           </li>
           <li onClick={openHamburgerMenu}>
-            <Link to="/projects">Projects</Link>
+            <Link to="https://jonaskhoza.github.io/portfolio//projects">
+              Projects
+            </Link>
           </li>
           <li onClick={openHamburgerMenu}>
-            <Link to="/about">About</Link>
+            <Link to="https://jonaskhoza.github.io/portfolio//about">
+              About
+            </Link>
           </li>
         </ul>
       </nav>
