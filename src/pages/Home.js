@@ -94,7 +94,7 @@ function Home() {
                   target="_blank"
                 >
                   <img
-                    src={process.env.PUBLIC_URL + "/images/languages/CSS3.png"}
+                    src={process.env.PUBLIC_URL + "/images/languages/css3.png"}
                     alt="CSS3 ICON"
                   />
                   <span>CSS3</span>
