@@ -58,7 +58,7 @@ function Home() {
                 engaging with like-minded people, playing video games and
                 watching football.
               </p>
-              <Link to="/about" className="read_more">
+              <Link to="/portfolio/about" className="read_more">
                 read more...
               </Link>
               <a
@@ -157,7 +157,7 @@ function Home() {
                 return (
                   <div className="project" key={project.id}>
                     <div className="project_name">
-                      <Link to="portfolio/projects"> {project.name}</Link>
+                      <Link to="/portfolio/projects"> {project.name}</Link>
                       <span>&#8658;</span>
                     </div>
 
