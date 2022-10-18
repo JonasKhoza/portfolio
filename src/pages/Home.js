@@ -78,7 +78,10 @@ function Home() {
               <li>
                 <a href="https://html.com/" target="_blank">
                   <img
-                    src="/images/languages/html5-logo.png"
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/images/languages/html5-logo.png"
+                    }
                     alt="HTML5 ICON"
                   />
                   <span>HTML5</span>
@@ -90,7 +93,10 @@ function Home() {
                   href="https://developer.mozilla.org/en-US/docs/Web/CSS"
                   target="_blank"
                 >
-                  <img src="/images/languages/CSS3.png" alt="CSS3 ICON" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/languages/CSS3.png"}
+                    alt="CSS3 ICON"
+                  />
                   <span>CSS3</span>
                 </a>
               </li>
@@ -100,7 +106,10 @@ function Home() {
                   target="_blank"
                 >
                   <img
-                    src="/images/languages/javascript-icon.png"
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/images/languages/javascript-icon.png"
+                    }
                     alt="Javascript Icon"
                   />
                   <span>Javascript</span>
@@ -109,7 +118,10 @@ function Home() {
               <li>
                 <a href="https://reactjs.org/" target="_blank">
                   <img
-                    src="/images/languages/React-icon.png"
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/images/languages/React-icon.png"
+                    }
                     alt="React Icon"
                   />
                   <span>React</span>
@@ -117,14 +129,20 @@ function Home() {
               </li>
               <li>
                 <a href="https://expressjs.com/" target="_blank">
-                  <img src="/images/languages/Node.jpg" alt="Javascript Icon" />
+                  <img
+                    src={process.env.PUBLIC_URL + "/images/languages/Node.jpg"}
+                    alt="Javascript Icon"
+                  />
                   <span>Node with Express</span>
                 </a>
               </li>
               <li>
                 <a href="https://www.mongodb.com/" target="_blank">
                   <img
-                    src="/images/languages/mongodb-logo.png"
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/images/languages/mongodb-logo.png"
+                    }
                     alt="MongoDB Icon"
                   />
                   <span>MongoDB</span>

@@ -9,18 +9,26 @@ function Footer() {
           <ul>
             <li>
               <a href="https://www.facebook.com/jonassecossaj3" target="_blank">
-                <img src="/images/social/facebook.png" alt="Facebook Icon" />
+                <img
+                  src={process.env.PUBLIC_URL + "/images/social/facebook.png"}
+                  alt="Facebook Icon"
+                />
               </a>
             </li>
             <li>
               <Link to="https://github.com/JonasKhoza" target="_blank">
-                <img src="/images/social/GitHub_Logo.png" alt="GitHub Icon" />
+                <img
+                  src={
+                    process.env.PUBLIC_URL + "/images/social/GitHub_Logo.png"
+                  }
+                  alt="GitHub Icon"
+                />
               </Link>
             </li>
             <li>
               <a href="https://wa.me/message/4BAIQD2IBJ4KN1" target="_blank">
                 <img
-                  src="/images/social/whatsapp.png"
+                  src={process.env.PUBLIC_URL + "/images/social/whatsapp.png"}
                   alt="Whatsapp Icon"
                   className="last_img"
                 />
@@ -28,7 +36,10 @@ function Footer() {
             </li>
             <li>
               <a href="mailto:jonaskhoza18@gmail.com" target="_blank">
-                <img src="/images/social/gmail.png" alt="Gmail Icon" />
+                <img
+                  src={process.env.PUBLIC_URL + "/images/social/gmail.png"}
+                  alt="Gmail Icon"
+                />
               </a>
             </li>
           </ul>

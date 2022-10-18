@@ -43,7 +43,7 @@ function Projects() {
                 )}
               </div>
               <div className=".image_container">
-                <img src={project.image} alt="" />
+                <img src={process.env.PUBLIC_URL + project.image} alt="" />
               </div>
             </div>
           );
