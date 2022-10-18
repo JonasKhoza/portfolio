@@ -190,7 +190,8 @@ function Home() {
             </div>
           </div>
           <p className="other-projects">
-            Checkout my other projects on my <a href="">GitHub</a>
+            Checkout my other projects on my{" "}
+            <a href="https://github.com/JonasKhoza" target="_blank">GitHub</a>
           </p>
         </div>
       </section>

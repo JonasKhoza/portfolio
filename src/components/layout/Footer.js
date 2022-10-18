@@ -16,14 +16,14 @@ function Footer() {
               </a>
             </li>
             <li>
-              <Link to="https://github.com/JonasKhoza" target="_blank">
+              <a href="https://github.com/JonasKhoza" target="_blank">
                 <img
                   src={
                     process.env.PUBLIC_URL + "/images/social/GitHub_Logo.png"
                   }
                   alt="GitHub Icon"
                 />
-              </Link>
+              </a>
             </li>
             <li>
               <a href="https://wa.me/message/4BAIQD2IBJ4KN1" target="_blank">
