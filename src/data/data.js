@@ -16,7 +16,7 @@ I built this project as part of the 100days of code challenge course from academ
       Node: "",
       MongoDB: "",
     },
-    LiveDemo: "",
+    LiveDemo: "https://jonaskhoza.github.io/Tic-Tac-Toe-Game/",
     Githubrepo: "https://github.com/JonasKhoza/Tic-Tac-Toe-Game",
   },
   {
