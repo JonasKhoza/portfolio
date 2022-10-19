@@ -29,7 +29,11 @@ function Projects() {
                 </ul>
                 <p>{project.full_description}</p>
                 {project.LiveDemo ? (
-                  <a href="" target="_blank" className="live_demo">
+                  <a
+                    href={project.LiveDemo}
+                    target="_blank"
+                    className="live_demo"
+                  >
                     Live Demo
                   </a>
                 ) : (
