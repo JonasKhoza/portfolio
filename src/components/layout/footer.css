@@ -1,16 +1,25 @@
 footer {
   width: 100%;
-  height: 16rem;
-  margin-top: -100px;
+  height: fit-content;
+
   padding: var(--size3);
   white-space: pre-wrap;
   word-wrap: break-word;
-  border: 2px solid black;
-  border-bottom: none;
+  color: rgb(23, 23, 99);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer h1 {
+  font-size: 2rem;
+}
+
+footer address {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer ul {
@@ -22,22 +31,14 @@ footer ul {
   list-style: none;
 }
 
-footer address ul li:nth-child(2) img {
-  width: 6rem;
-  padding-top: 6px;
-}
-
-footer address ul li:nth-child(3) img {
-  width: 3.5rem;
-}
-
-footer address ul li:last-child img {
-  width: 2.5rem;
-  padding-top: 6px;
+footer address ul li a {
+  color: rgb(23, 23, 99);
+  font-weight: 600;
+  font-size: 1.3rem;
 }
 
 footer .author {
-  font-size: var(--size5);
+  font-size: var(--size4);
   padding: var(--size3);
 }
 footer .author .author_name {
@@ -47,7 +48,7 @@ footer .author .author_name {
 
 @media screen and (max-width: 978px) {
   footer {
-    padding-top: 8rem;
+    padding-top: 0;
     width: 100%;
   }
   footer ul {
@@ -55,5 +56,11 @@ footer .author .author_name {
     grid-template-columns: 1fr 1fr;
     place-items: center;
     gap: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer address {
+    flex-direction: column;
   }
 }

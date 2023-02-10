@@ -48,3 +48,15 @@ body {
   height: 100%;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main {
+    padding-bottom: 2rem;
+  }
+}

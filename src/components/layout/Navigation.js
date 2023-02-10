@@ -1,20 +1,43 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import "./header.css";
 function Navigation({ isNotOpen, openHamburgerMenu }) {
+  console.log(isNotOpen);
   return (
     <header className="main_header">
       <nav>
         <ul>
           <li>
-            <Link to="/portfolio/">Home</Link>
+            <NavLink
+              to="/portfolio"
+              className={({ isActive }) => {
+                return isActive ? "active" : "";
+              }}
+              end
+            >
+              Home
+            </NavLink>
           </li>
 
           <li>
-            <Link to="/portfolio/projects">Projects</Link>
+            <NavLink
+              to="/portfolio/projects"
+              className={({ isActive }) => {
+                return isActive ? "active" : "";
+              }}
+            >
+              Projects
+            </NavLink>
           </li>
           <li>
-            <Link to="/portfolio/about">About</Link>
+            <NavLink
+              to="/portfolio/about"
+              className={({ isActive }) => {
+                return isActive ? "active" : "";
+              }}
+            >
+              About
+            </NavLink>
           </li>
         </ul>
       </nav>

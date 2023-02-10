@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
@@ -7,7 +7,8 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/portfolio/" element={<Home />} />
+        <Route path="/" element={<Navigate replace to="/portfolio" />} />
+        <Route path="/portfolio" element={<Home />} />
         <Route path="/portfolio/projects" element={<Projects />} />
         <Route path="/portfolio/about" element={<About />} />
       </Routes>

@@ -1,29 +1,57 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import projects from "../data/data";
 import "./home.css";
 
 function Home() {
-  document.title = "Home";
+  document.title = "Home - Jonas Khoza";
   return (
     <main className="home_main">
-      <section className="first_section">
-        <h1>Hello!</h1>
+      <section className="parent">
+        <section className="first_section">
+          <h1>Hello!</h1>
+          <motion.p
+            className="description"
+            animate={{ y: 20, x: 8 }}
+            transition={{
+              duration: 2,
+              delay: 0.3,
+              ease: "easeOut",
+            }}
+            initial={{
+              x: -90,
+              opacity: 1,
+            }}
+          >
+            I am <span className="name">Jonas Khoza.</span>I am a website
+            developer!
+            <br /> I love building calmn interfaces, web apps
+            <br /> and everything in between! I am a life-long learner.
+          </motion.p>
+          <img
+            src={
+              process.env.PUBLIC_URL +
+              "/images/developer/developer-working-on-laptop-4550336-3779144.webp"
+            }
+            alt=""
+            className="developer_image"
+          />
+          <img
+            src={process.env.PUBLIC_URL + "/images/developer/download (2).png"}
+            alt=""
+            className="responsiveness_image"
+          />
+        </section>
+        <section className="second_section">
+          <p className="email_me">
+            Get in touch!&#128519;
+            <a className="get_in_touch" href="mailto:jonaskhoza18@gmail.com">
+              jonaskhoza18@gmail.com
+            </a>
+          </p>
+        </section>
+      </section>
 
-        <p className="description">
-          I am <span className="name">Jonas Khoza.</span>I am a website
-          developer!
-          <br /> I love building calmn interfaces, web apps
-          <br /> and everything in between! I am a life-long learner.
-        </p>
-      </section>
-      <section className="second_section">
-        <p className="email_me">
-          Get in touch!&#128519;
-          <a className="get_in_touch" href="mailto:jonaskhoza18@gmail.com">
-            jonaskhoza18@gmail.com
-          </a>
-        </p>
-      </section>
       <section className="third_section">
         <div className="container">
           <div className="background">
@@ -64,6 +92,7 @@ function Home() {
               <a
                 href="https://drive.google.com/file/d/10sUpEKlynAZ9C-jLKxM9KERk1P91JE88/view?usp=sharing"
                 target="_blank"
+                rel="noreferrer"
                 className="resume"
               >
                 View my resume
@@ -76,7 +105,7 @@ function Home() {
             <h1>Skills</h1>
             <ul>
               <li>
-                <a href="https://html.com/" target="_blank">
+                <a href="https://html.com/" target="_blank" rel="noreferrer">
                   <img
                     src={
                       process.env.PUBLIC_URL +
@@ -86,12 +115,14 @@ function Home() {
                   />
                   <span>HTML5</span>
                 </a>
+                <p>Learnt 2021!</p>
               </li>
 
               <li>
                 <a
                   href="https://developer.mozilla.org/en-US/docs/Web/CSS"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     src={process.env.PUBLIC_URL + "/images/languages/css3.png"}
@@ -99,11 +130,13 @@ function Home() {
                   />
                   <span>CSS3</span>
                 </a>
+                <p>Learnt 2021!</p>
               </li>
               <li>
                 <a
                   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     src={
@@ -114,9 +147,10 @@ function Home() {
                   />
                   <span>Javascript</span>
                 </a>
+                <p>Learnt 2021!</p>
               </li>
               <li>
-                <a href="https://reactjs.org/" target="_blank">
+                <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
                   <img
                     src={
                       process.env.PUBLIC_URL +
@@ -126,18 +160,28 @@ function Home() {
                   />
                   <span>React</span>
                 </a>
+                <p>Learnt 2022!</p>
               </li>
               <li>
-                <a href="https://expressjs.com/" target="_blank">
+                <a
+                  href="https://expressjs.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src={process.env.PUBLIC_URL + "/images/languages/Node.jpg"}
                     alt="Javascript Icon"
                   />
                   <span>Node with Express</span>
                 </a>
+                <p>Learnt 2022!</p>
               </li>
               <li>
-                <a href="https://www.mongodb.com/" target="_blank">
+                <a
+                  href="https://www.mongodb.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img
                     src={
                       process.env.PUBLIC_URL +
@@ -147,6 +191,7 @@ function Home() {
                   />
                   <span>MongoDB</span>
                 </a>
+                <p>Learnt 2022!</p>
               </li>
             </ul>
           </div>
@@ -158,7 +203,6 @@ function Home() {
                   <div className="project" key={project.id}>
                     <div className="project_name">
                       <Link to="/portfolio/projects"> {project.name}</Link>
-                      <span>&#8658;</span>
                     </div>
 
                     <p>{project.description}</p>
@@ -191,7 +235,11 @@ function Home() {
           </div>
           <p className="other-projects">
             Checkout my other projects on my{" "}
-            <a href="https://github.com/JonasKhoza" target="_blank">
+            <a
+              href="https://github.com/JonasKhoza"
+              target="_blank"
+              rel="noreferrer"
+            >
               GitHub
             </a>
           </p>

@@ -2,7 +2,7 @@ import projects from "../data/data";
 import "./projects.css";
 
 function Projects() {
-  document.title = "Projects";
+  document.title = "Projects - Jonas Khoza";
   return (
     <main className="home">
       <h1>Projects</h1>
