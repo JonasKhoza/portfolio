@@ -1,8 +1,10 @@
 import { Routes, Route, Navigate } from "react-router-dom";
+
+import Layout from "./components/layout/Layout";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
-import Layout from "./components/layout/Layout";
+import NotFound from "./pages/NotFound";
 function App() {
   return (
     <Layout>
@@ -11,6 +13,7 @@ function App() {
         <Route path="/portfolio" element={<Home />} />
         <Route path="/portfolio/projects" element={<Projects />} />
         <Route path="/portfolio/about" element={<About />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>
   );
