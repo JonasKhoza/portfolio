@@ -10,10 +10,10 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<Navigate replace to="/portfolio" />} />
+        <Route path="*" element={<NotFound />} />
         <Route path="/portfolio" element={<Home />} />
         <Route path="/portfolio/projects" element={<Projects />} />
         <Route path="/portfolio/about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
       </Routes>
     </Layout>
   );
