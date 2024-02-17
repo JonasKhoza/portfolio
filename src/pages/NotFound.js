@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import classes from "./not_found.module.css";
+import classes from "./styles/not_found.module.css";
 function NotFound() {
   return (
     <div className={classes.not_found}>

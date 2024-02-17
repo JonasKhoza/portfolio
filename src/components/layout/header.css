@@ -7,6 +7,7 @@
   background-color: var(--white2);
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
+  padding: 2rem;
 }
 
 .main_header nav ul {
@@ -73,9 +74,9 @@ header nav + .hamburger {
     padding: var(--size-large3) 0;
     list-style: none;
   }
-  .sideDrawer ul li:nth-child(2) {
+  /* .sideDrawer ul li:nth-child(2) {
     padding-left: var(--size5);
-  }
+  } */
   .sideDrawer ul a {
     color: var(--primary-gray2);
     text-decoration: none;

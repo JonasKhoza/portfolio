@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import "./header.css";
 
@@ -18,17 +18,7 @@ function Aside({ isNotOpen, openHamburgerMenu }) {
               Home
             </NavLink>
           </li>
-          <li onClick={openHamburgerMenu}>
-            <NavLink
-              to="/portfolio/projects"
-              className={({ isActive }) => {
-                return isActive ? "active" : "";
-              }}
-              end
-            >
-              Projects
-            </NavLink>
-          </li>
+
           <li onClick={openHamburgerMenu}>
             <NavLink
               to="/portfolio/about"

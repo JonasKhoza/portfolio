@@ -2,7 +2,6 @@ import { Link, NavLink } from "react-router-dom";
 
 import "./header.css";
 function Navigation({ isNotOpen, openHamburgerMenu }) {
-  console.log(isNotOpen);
   return (
     <header className="main_header">
       <nav>
@@ -19,16 +18,6 @@ function Navigation({ isNotOpen, openHamburgerMenu }) {
             </NavLink>
           </li>
 
-          <li>
-            <NavLink
-              to="/portfolio/projects"
-              className={({ isActive }) => {
-                return isActive ? "active" : "";
-              }}
-            >
-              Projects
-            </NavLink>
-          </li>
           <li>
             <NavLink
               to="/portfolio/about"

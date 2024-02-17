@@ -1,31 +1,85 @@
-import "./about.css";
+import "./styles/about.css";
 
 function About() {
   document.title = "About - Jonas Khoza";
   return (
     <main className="home_main2">
+      <h1 className="confession">I have always loved tech</h1>
+      <span className="read_time">2.5 minute read</span>
+      <p className="cv_container">
+        Looking for my{" "}
+        <a
+          href="https://drive.google.com/file/d/1kpzdr3OFeCwp7Z28_i1-5CduxOzVhsFN/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer"
+          className="resume"
+        >
+          CV?
+        </a>
+      </p>
       <h1>My quick story</h1>
-      <h2>Full-stack web developer</h2>
+      <h2>
+        Full-Stack Web Developer with a Drive for Learning and Collaboration
+      </h2>
       <section className="first-section">
         <p>
-          Coming from a community where there's no library with computers, it
-          has always been hard for me to harness and substantiate my love for
-          technology as a whole. <br />I managed to get access to computer
-          resources a bit late in my age. Since then I have always connected my
-          inquisitive mind, my abilities to work with maths, my desire to keep
-          learning and my love for technology to propel myself forward. After I
-          matriculated in 2020, due to personal matters I couldn't apply to any
-          university for 2021. <br />
-          Fortunately my first computer came to my hands later that year. With
-          that I ventured into teaching myself how to program on the web while
-          awaiting my ID from the Home Affairs. I made use of free platforms
-          like
-          <span className="learning-platforms">
-            SoloLearn, W3Schools, YouTube, javascript.io
-            <span style={{ fontWeight: "400", paddingLeft: "6px" }}>and</span> a
-            full-stack web-dev course from Academind.com
-          </span>
-          bought by a friend. The rest is history.
+          Greetings! I am a dedicated full-stack web developer with a burning
+          passion for technology and a relentless drive to learn and grow. My
+          journey into the world of programming began in a community where
+          access to computer resources was limited. However, my determination
+          pushed me to overcome these challenges and pursue my love for
+          technology.
+        </p>
+        <p>
+          Having gained access to computer resources later in life, I embarked
+          on a self-taught journey to master web development. While waiting for
+          my ID, I delved into various online platforms, including{" "}
+          <span>
+            Udemy, SoloLearn, W3Schools, YouTube tutorials, and even a
+            full-stack web development course from Academind.com,
+          </span>{" "}
+          generously provided by a friend. These resources became my gateway to
+          acquiring the necessary skills and knowledge.
+        </p>
+        <p>
+          Throughout my journey, I have developed a keen eye for detail and a
+          strong desire to understand the "why" behind every problem. I enjoy
+          breaking down complex challenges into manageable pieces, thoroughly
+          analyzing them, and deriving the most fitting solutions.
+          Problem-solving excites me, and I credit my love for solving intricate
+          math problems to an inspiring math teacher.
+        </p>
+
+        <p>
+          In 2023, I joined the prestigious University of South Africa to
+          further expand my knowledge and skills in the field of informatics.
+          Throughout my studies, I have immersed myself in various subjects,
+          including{" "}
+          <span>
+            Python and C++ programming, Foundations of Computer Science, and
+            computer architecture.
+          </span>{" "}
+          These foundational courses have provided me with a solid understanding
+          of programming syntax, computational principles, and the inner
+          workings of computer systems.
+        </p>
+
+        <p>
+          Looking ahead to 2024, I am excited to delve into the world of
+          <span>graphical user interfaces (GUI)</span> with both Python and C++.
+          This next phase of my education will enable me to enhance my skills in
+          creating intuitive and user-friendly interfaces, further enriching my
+          capabilities as a full-stack web developer.
+        </p>
+
+        <p>
+          While my focus is on software development, my ultimate goal is to
+          become a<span>data scientist.</span> The field of data science
+          fascinates me, as it combines my love for technology with the power of
+          data analysis and insights. Through my studies and practical
+          experience, I aim to acquire the necessary skills in data
+          manipulation, statistical analysis, and machine learning algorithms to
+          make meaningful contributions in this exciting field.
         </p>
       </section>
       <section className="second-section">
@@ -40,40 +94,56 @@ function About() {
         </p>
       </section>
       <section className="code_emphasy">
-        My code thrives for <b>readability</b>, for everyone to be able to form
-        a simple grasp on first sight.
-        <br /> It excites me everytime I tackle different and challenging
-        projects. I know then I have something new to learn. And programming is
-        all about <b>learning something new everyday</b>.
+        <p>
+          {" "}
+          My code thrives on <span>readability and simplicity,</span> ensuring
+          that anyone can grasp it effortlessly. Every project I tackle brings
+          new excitement and a fresh opportunity to learn.{" "}
+          <span>
+            {" "}
+            firmly believe that programming is an ongoing journey of continuous
+            learning.
+          </span>
+          I
+        </p>
       </section>
       <section className="third-section">
         <h2>As a person</h2>
         <p>
           If I had to describe myself to anyone in just a single word, that
-          would be <b>resourceful</b>. I love being creative, to work in an
-          unconventional way, breaking boundaries. I love that!
+          would be <b>resourceful</b>. Beyond coding, I am a resourceful
+          individual who thrives on creativity and unconventional approaches. I
+          am not afraid to push boundaries and explore new possibilities.
+          Innovation fuels my work, and I love embracing fresh perspectives and
+          ideas.
         </p>
       </section>
       <section className="four-section">
         <h2>As a colleague</h2>
         <p>
-          I love team work. <b>I am a team player!</b>. I have done this in many
-          occassions where I either had to lead a team or work with a group of
-          problem solvers. I believe two minds connected together stands a
-          better chance compared to one. There's always something new to learn
-          from others.
-          <b /> My communication skills were well boosted along my journey as a
-          high school student where I was a head of school learners through the
-          Representative Council of Learners(RCL) program and a head of event
-          and environment program.
-          <br />
-          Working with different groups and sharing ideas with them got us very
-          far. I conform by the principle <b>"we"</b> as to <b>"I"</b> when
-          working in a group.
+          As a colleague, I excel in teamwork and collaboration. Throughout my
+          experience, both as a leader of energetic high school students and
+          through my involvement in the{" "}
+          <span>
+            Representative Council of Learners (RCL) program and Girls and Boys
+            Movement(G/BEM),
+          </span>{" "}
+          I have honed my communication skills and learned the value of working
+          together. I firmly believe in the power of collective minds, as two
+          minds connected can achieve far more than one. My collaborative
+          approach centers around the principle of <span>"we"</span> rather than{" "}
+          <span>"I,"</span>
+          fostering an environment of mutual growth and success.
+        </p>
+
+        <p>
+          I am excited to embark on new opportunities and contribute my skills
+          and enthusiasm to meaningful projects. Let's connect and explore how
+          we can create something incredible together!
         </p>
       </section>
 
-      <h3 className="see-soon">I wish to hear from you soon!</h3>
+      <h3 className="see-soon">I look forward to hearing from you soon!</h3>
     </main>
   );
 }

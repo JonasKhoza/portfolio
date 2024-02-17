@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
 import "./footer.css";
 function Footer() {
   return (
     <footer>
       <address>
         <p className="author">
-          &copy;{new Date().getFullYear()} -designed and built by
-          <cite className="author_name">Jonas Khoza</cite>
+          <span>Designed and built by:</span>
+          <cite className="author_name">
+            &copy; Jonas Khoza <span> 2022</span>
+          </cite>
         </p>
         <ul>
           <li>
@@ -15,7 +16,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              facebook
+              FACEBOOK
             </a>
           </li>
           <li>
@@ -24,7 +25,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              github
+              GITHUB
             </a>
           </li>
           <li>
@@ -33,7 +34,7 @@ function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              whatsapp
+              WHATSAPP
             </a>
           </li>
           <li>
@@ -42,7 +43,7 @@ function Footer() {
               target="_self"
               rel="noreferrer"
             >
-              email
+              EMAIL
             </a>
           </li>
         </ul>

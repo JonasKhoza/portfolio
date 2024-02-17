@@ -1,16 +1,47 @@
 .home_main2 {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
   width: 80%;
   margin: 0 auto;
   padding: var(--size3);
-  color: rgb(23, 23, 99);
+  color: rgb(18, 30, 39);
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
 }
 
-.home_main2 h2 {
-  text-decoration: underline;
+.home_main2 .confession {
+  max-width: 100%;
+  font-weight: 900;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.read_time {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+.home_main2 .cv_container {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.home_main2 .cv_container .resume {
+  text-decoration: none;
+  color: rgb(190, 58, 58);
 }
 
 .home_main2 h1 {
   text-align: center;
+}
+
+.home_main2 p span {
+  font-weight: 700;
+  padding: 0 5px;
 }
 
 .home_main2 .first-section {
@@ -18,18 +49,25 @@
   margin: var(--size3);
   font-size: var(--size5);
   font-weight: 500;
-  color: rgb(23, 23, 99);
+  color: rgb(18, 30, 39);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .home_main2 .first-section .learning-platforms {
   font-weight: 700;
   padding: 0 4px;
 }
+
 .home_main2 .second-section {
   font-family: "Montserrat", sans-serif;
   margin: var(--size5);
   font-size: var(--size5);
   font-weight: 500;
-  color: rgb(23, 23, 99);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .home_main2 .code_emphasy {
@@ -37,7 +75,6 @@
   margin: var(--size5);
   font-size: var(--size5);
   font-weight: 500;
-  color: rgb(23, 23, 99);
 }
 
 .home_main2 .third-section {
@@ -45,12 +82,13 @@
   margin: var(--size5);
   font-size: var(--size5);
   font-weight: 500;
-  color: rgb(23, 23, 99);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .home_main2 .third-section h2 {
   font-size: var(--size);
-  text-decoration: underline;
 }
 
 .home_main2 .four-section {
@@ -58,12 +96,13 @@
   margin: var(--size3);
   font-size: var(--size5);
   font-weight: 500;
-  color: rgb(23, 23, 99);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .home_main2 .four-section h2 {
   font-size: var(--size);
-  text-decoration: underline;
 }
 
 .see-soon {
@@ -76,13 +115,19 @@
   .home_main2 {
     width: 100%;
     margin: 0 auto;
-    padding: var(--size);
+    padding: 1rem;
     color: var(--dark4);
+  }
+
+  .home_main2 .confession {
+    font-size: 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
 
 @media screen and (max-width: 400px) {
   .home_main2 {
-    padding: 0;
+    padding: 0.5rem;
   }
 }

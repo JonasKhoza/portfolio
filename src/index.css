@@ -27,12 +27,11 @@ html {
   --dark5: rgb(15, 13, 13);
 
   --white: rgb(255, 255, 255);
-  --white2: rgb(248, 248, 248);
+  --white2: rgb(245, 243, 243);
   height: 100%;
   width: 100%;
 }
 body {
-  padding: 0 var(--size4);
   background-color: var(--white);
   height: 100%;
   width: 100%;
@@ -47,6 +46,46 @@ body {
 #root {
   height: 100%;
   width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 900;
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Set the background color of the track */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Set the color of the thumb */
+  border-radius: 5px; /* Add rounded corners to the thumb */
+}
+
+/* Style the scrollbar progress indicator */
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #888; /* Set the color of the vertical thumb */
+}
+
+/* Style the progress indicator */
+::-webkit-scrollbar-thumb:vertical:active {
+  background-color: #555; /* Set the color of the vertical thumb when active */
+}
+
+/* Style the progress indicator when hovering over it */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Set the color of the thumb on hover */
 }
 
 @media screen and (max-width: 768px) {
