@@ -23,7 +23,7 @@ function About() {
       </h2>
       <section className="first-section">
         <p>
-          Greetings! I am a dedicated full-stack web developer with a burning
+          Greetings! I am a dedicated Full-Stack Web Developer with a burning
           passion for technology and a relentless drive to learn and grow. My
           journey into the world of programming began in a community where
           access to computer resources was limited. However, my determination
@@ -36,7 +36,7 @@ function About() {
           my ID, I delved into various online platforms, including{" "}
           <span>
             Udemy, SoloLearn, W3Schools, YouTube tutorials, and even a
-            full-stack web development course from Academind.com,
+            Full-Stack Web development course from Academind.com,
           </span>{" "}
           generously provided by a friend. These resources became my gateway to
           acquiring the necessary skills and knowledge.

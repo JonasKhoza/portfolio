@@ -5,7 +5,7 @@ import skills from "../data/skills";
 import "./styles/home.css";
 
 function Home() {
-  document.title = "Jonas Khoza | Software Developer";
+  document.title = "Jonas Khoza | Full-Stack Web Developer";
   return (
     <main className="home_main">
       <section className="parent">
@@ -24,8 +24,8 @@ function Home() {
               opacity: 1,
             }}
           >
-            I am <span className="name">Jonas Khoza.</span>I am a website
-            developer!
+            I am <span className="name">Jonas Khoza.</span>I am a Full-Stack Web
+            Developer!
             <br /> I love building calmn interfaces, web apps
             <br /> and everything in between! I am a life-long learner.
           </motion.p>
@@ -66,7 +66,8 @@ function Home() {
                 But just like many, my journey hasn't been smooth. Access to
                 reliable resources such as stable internet connection and
                 computer resources has always been a predicament. Today I am a
-                self-taught web developer through Udemy and now enrolled for a
+                self-taught Full-Stack Web Developer through Udemy courses and
+                now enrolled for a
                 <span className="degree">
                   Bachelor of Science in Informatics at the University of South
                   Africa 2023. My journey at the university so far has included
@@ -79,10 +80,10 @@ function Home() {
               </p>
               <br />
               <p>
-                As a web developer, I love bringing together different
-                technologies and harnessing their abilities to produce the
-                desired outcome. With my keen eye for good design, I am able to
-                design and build projects that satisfies the client's needs
+                As a Full-Stack Web Developer, I love bringing together
+                different technologies and harnessing their abilities to produce
+                the desired outcome. With my keen eye for good design, I am able
+                to design and build projects that satisfies the client's needs.
               </p>
               <br />
               <p>
@@ -90,7 +91,7 @@ function Home() {
                   When I am not in front of the screen
                 </span>
                 , I love trying to come up with tech solutions mostly tech
-                solutions to solve our african everyday probles, engaging with
+                solutions to solve our african everyday problems, engaging with
                 like-minded people, reading, playing with high school math
                 questions,playing video games and watching football.
               </p>

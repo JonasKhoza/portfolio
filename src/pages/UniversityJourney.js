@@ -5,9 +5,9 @@ import c from "./styles/university_journey.module.css";
 export default function UniversityJourney() {
   return (
     <section className={c.uni_journey_cont}>
-      <h1>Software Developer and Aspiring "Data Scientist"</h1>
+      <h1>Full-Stack Web Developer and Aspiring "Data Scientist"</h1>
       <div className={c.joined_on}>
-        Joined the University of South Africa on 2023
+        Joined the University of South Africa in 2023
       </div>
 
       <div>

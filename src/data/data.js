@@ -9,7 +9,7 @@ At first I had built WEB which is an online store for developers, but performanc
 The most challenging part with the project was about figuring out how to use different technologies to make it fast, scalable and secure. I had to combine JWT, express-session and connect-mongodb-session to handle both authentication and cart creation and saving. And cors presented it's challenges too. View the project to learn more.
   `,
 
-    image: "/images/projects/Screenshot 2024-02-17 103810.png",
+    image: "/images/projects/Screenshot 2024-02-18 113951.png",
     languages: {
       Html: "",
       CSS: "",
