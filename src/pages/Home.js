@@ -70,13 +70,23 @@ function Home() {
                 now enrolled for a
                 <span className="degree">
                   Bachelor of Science in Informatics at the University of South
-                  Africa 2023. My journey at the university so far has included
-                  learning the syntax of both Python and C++ and other great
-                  things.
-                  <Link to="/portfolio/my-journey" className="read_more">
-                    read more...
-                  </Link>
-                </span>
+                  Africa 2023.
+                </span>{" "}
+                Two twenty-something British-South Africans walking 800km to
+                Santiago de Compostela in the hopes of making a difference....
+                <a
+                  className="read_more"
+                  href="https://web.facebook.com/bootsbeyondboundaries"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Find out how I am being funded...
+                </a>
+                My journey at the university so far has included learning the
+                syntax of both Python and C++ and other great things.
+                <Link to="/portfolio/my-journey" className="read_more">
+                  read more...
+                </Link>
               </p>
               <br />
               <p>

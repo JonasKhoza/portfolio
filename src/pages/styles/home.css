@@ -132,16 +132,7 @@
   color: rgb(13, 13, 189);
 }
 
-.read_more {
-  display: block;
-  color: blue;
-  text-decoration: none;
-  margin-top: 0.5rem;
-}
 
-.read_more:hover {
-  color: rgb(13, 13, 189);
-}
 
 .third_section .skills {
   display: flex;

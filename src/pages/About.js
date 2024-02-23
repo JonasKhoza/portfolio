@@ -62,6 +62,14 @@ function About() {
           These foundational courses have provided me with a solid understanding
           of programming syntax, computational principles, and the inner
           workings of computer systems.
+          <a
+            className="read_more"
+            href="https://web.facebook.com/bootsbeyondboundaries"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Find out how I am being funded...
+          </a>
         </p>
 
         <p>
