@@ -4,9 +4,9 @@ const projects = [
     role: "PERSONAL PROJECT",
     name: "Vintage: Your Destination for Tech Treasures and Innovations!",
     description: `
-At first I had built WEB which is an online store for developers, but performance wise it wasn't great, and I had no  TypeScript in it, so I built this version of a website to improve speed, and performance.  The use of TypeScript ensures robust type-checking, enabling a more reliable and maintainable codebase. I tapped into React performance optimizations. Well thought Mongoose Schemas for performance matters. I added new features, including a well improved built-in admin panel.
+At first I had built WEB which is an online store for developers, but performance wise it wasn't great, and I had no  TypeScript in it, so I built this version of a website to improve speed, and performance.  The use of TypeScript ensures robust type-checking, enabling a more reliable and maintainable codebase. I tapped into React performance optimizations, including use of lazy loading. Well thought Mongoose Schemas for performance matters. I added new features, including a well improved built-in admin panel.
 
-The most challenging part with the project was about figuring out how to use different technologies to make it fast, scalable and secure. I had to combine JWT, express-session and connect-mongodb-session to handle both authentication and cart creation and saving. And cors presented it's challenges too. View the project to learn more.
+The most challenging part with the project was about figuring out how to use different technologies to make it fast, scalable and secure. I had to combine JWT, express-session and connect-mongodb-session to handle both authentication and cart creation and saving. And cors presented it's challenges too. View the project to learn more...
   `,
 
     image: "/images/projects/Screenshot 2024-02-18 113951.png",
@@ -30,7 +30,7 @@ The most challenging part with the project was about figuring out how to use dif
     name: "EatSome: Discover and Share Your Favorite Restaurants!",
     role: "PERSONAL PROJECT",
     description: `
-Sometimes getting a list of different restaurants around Harties can be a pain, with all scattered in the of it.
+Sometimes getting a list of different restaurants around Harties can be a pain, with all scattered in the nature of it.
 
 EatSome is a dynamic website where food enthusiasts come together to explore and recommend their top restaurant picks.
 
@@ -58,7 +58,7 @@ With secure authentication powered by express-session, you can create an account
     name: "Tic-Tac-Toe",
     role: "PERSONAL PROJECT",
     description: `
-Experience the classic game of Tic Tac Toe like never before with my interactive and engaging digital version! Challenge your friends in this timeless game of strategy and wit. With a sleek and intuitive user interface, my Tic Tac Toe game provides a seamless and enjoyable gaming experience.
+Experience the classic game of Tic Tac Toe like never before with my interactive and engaging digital version! Challenge your friends in this timeless game of strategy and wit. With a sleek and intuitive user interface. My Tic Tac Toe game provides a seamless and enjoyable gaming experience.
 
 Immerse yourself in the battle for three-in-a-row as you strategically place your X's or O's on the grid. Plan your moves carefully, anticipate your opponent's tactics, and aim for victory!
 

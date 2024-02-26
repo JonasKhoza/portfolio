@@ -69,13 +69,12 @@ export default function Vintage() {
         </p>
         <h2>Web Stack and Explanation</h2>
         <p>
-          Built the project using a blend of React for it's can I say I used
-          react because of it's because of its powerful server-side rendering
-          and dynamic routing and it's ability to power modern web development
-          to deliver a lightning-fast website. The use of{" "}
+          Built the project using a blend of React because of its powerful
+          server-side rendering and dynamic routing and it's ability to power
+          modern web development to deliver a lightning-fast website. The use of{" "}
           <span>TypeScript</span> ensures robust type-checking, enabling a more
           reliable and maintainable codebase. The backend is powered by{" "}
-          <span>Express with TypeScript</span> power the REST API.
+          <span>Express with TypeScript</span> to power the REST API.
           Authentication was built using{" "}
           <span>JWT and express-session and connect-mongodb-express</span> was
           used to handle cart functionalities and the use of{" "}
@@ -88,17 +87,23 @@ export default function Vintage() {
         <p>
           To ensure code stability and site performance, I implemented
           TypeScript type-checking, React performance optimization with lazy
-          loading, a well though database schema.
+          loading, react hooks, a well thought database schema.
         </p>
         <h2>Problems and Thought Process</h2>
         <p>
           While building Vintage, I paid special attention to the design of
           Mongoose schemas, ensuring a solid foundation for the backend.
           <span>However, challenges </span>arose when it came to handling user
-          addresses. In retrospect, incorporating a default address within the
-          User Schema could have simplified the process, eliminating the need
-          for separate address mappings. Nonetheless, I made efficient use of
-          separate queries to retrieve addresses when necessary.
+          addresses.{" "}
+          <span>
+            I happen to have separated the User schema from the Address schema
+            and leaving no link at all on User schema but providing one on the
+            Address schema.
+          </span>{" "}
+          In retrospect, incorporating a default address within the User schema
+          could have simplified the process, eliminating the need for separate
+          address mappings. Nonetheless, I made efficient use of separate
+          queries to retrieve addresses when necessary.
         </p>
         <h2>Lessons Learned & Future Work</h2>
         <p>

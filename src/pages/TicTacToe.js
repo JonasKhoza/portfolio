@@ -11,7 +11,7 @@ export default function TicTacToe() {
 
       <p>
         Gaming can be sort of fun. So why not indulge yourself and a friend in
-        this well developed Tic Tc Toe game. Have fun!
+        this well developed Tic Tac Toe game. Have fun!
       </p>
 
       <div className={c.project_resources}>
@@ -95,7 +95,7 @@ export default function TicTacToe() {
           win conditions, required careful planning and attention to detail. I
           had to think through different scenarios and edge cases to ensure the
           game behaved correctly and provided a fair and enjoyable experience
-          for players. Considering that I had not played Tic Tact Toe before I
+          for players. Considering that I had not played Tic Tac Toe before I
           had to read about how it's played and lean whilst developing it.
         </p>
         <p>

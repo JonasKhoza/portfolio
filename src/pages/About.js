@@ -112,7 +112,6 @@ function About() {
             firmly believe that programming is an ongoing journey of continuous
             learning.
           </span>
-          I
         </p>
       </section>
       <section className="third-section">

@@ -7,7 +7,7 @@ import "./styles/home.css";
 function Home() {
   document.title = "Jonas Khoza | Full-Stack Web Developer";
   return (
-    <main className="home_main">
+    <div className="home_main">
       <section className="parent">
         <section className="first_section">
           <h1>Hello!</h1>
@@ -72,6 +72,10 @@ function Home() {
                   Bachelor of Science in Informatics at the University of South
                   Africa 2023.
                 </span>{" "}
+              </p>
+              <br />
+              <p>
+                {" "}
                 Two twenty-something British-South Africans walking 800km to
                 Santiago de Compostela in the hopes of making a difference....
                 <a
@@ -82,6 +86,10 @@ function Home() {
                 >
                   Find out how I am being funded...
                 </a>
+              </p>
+              <br />
+              <p>
+                {" "}
                 My journey at the university so far has included learning the
                 syntax of both Python and C++ and other great things.
                 <Link to="/portfolio/my-journey" className="read_more">
@@ -100,10 +108,11 @@ function Home() {
                 <span className="hobbies">
                   When I am not in front of the screen
                 </span>
-                , I love trying to come up with tech solutions mostly tech
-                solutions to solve our african everyday problems, engaging with
+                , I love trying to come up with solutions mostly tech solutions
+                to solve our african everyday problems, engaging with
                 like-minded people, reading, playing with high school math
-                questions,playing video games and watching football.
+                questions, playing video games and watching football, I am a big
+                Manchester United fan.
               </p>
               <Link to="/portfolio/about" className="read_more">
                 keep reading my bio...
@@ -230,7 +239,7 @@ function Home() {
           </p>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 

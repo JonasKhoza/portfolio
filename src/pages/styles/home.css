@@ -1,6 +1,9 @@
 .home_main {
   width: 100%;
   color: rgb(23, 23, 99);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .home_main .parent {
@@ -115,6 +118,7 @@
 }
 
 .third_section .background .background_desc .hobbies {
+  width: fit-content;
   font-weight: bolder;
 }
 
@@ -131,8 +135,6 @@
   font-size: 1.3rem;
   color: rgb(13, 13, 189);
 }
-
-
 
 .third_section .skills {
   display: flex;
@@ -376,6 +378,8 @@
 @media screen and (max-width: 1500px) {
   .third_section {
     padding: 0 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     margin: 0;
   }
   .third_section .skills ul {
@@ -451,8 +455,10 @@
   .home_main {
     padding: 2px;
   }
+
   .third_section {
-    padding: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .third_section .container {
@@ -492,6 +498,8 @@
   .third_section {
     padding-top: 4rem;
     padding-left: 0;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
   }
 
   .third_section .background {
@@ -540,6 +548,13 @@
 }
 
 @media screen and (max-width: 600px) {
+  .home_main {
+    width: 100%;
+    color: rgb(23, 23, 99);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
   .home_main .parent {
     display: flex;
     flex-direction: column;

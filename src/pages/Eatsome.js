@@ -60,12 +60,12 @@ export default function Eatsome() {
             The goal was to create a dynamic website that perform CRUD
             operations with ease and handle user generated content
           </span>
-          through a built it form.
+          through a built-in form.
         </p>
         <p>
-          It is powered with a secure authentication built with strong tech, you
-          can create an account and start connecting with fellow foodies in no
-          time. Your preferences and recommendations are stored in a powerful
+          It is powered with a secure authentication built-in with strong tech,
+          you can create an account and start connecting with fellow foodies in
+          no time. Your preferences and recommendations are stored in a powerful
           database , ensuring a seamless and reliable experience.
         </p>
         <h2>Web Stack and Explanation</h2>
@@ -83,9 +83,10 @@ export default function Eatsome() {
           Express provides a minimalist approach to building web applications
           and APIs, allowing me to create server-side logic and handle routing
           with ease. Along with <span>EJS (Embedded JavaScript) templates</span>{" "}
-          offer a simple and efficient way to generate dynamic HTML content. It
-          allows me to seamlessly integrate server-side logic with HTML, making
-          it easier to render dynamic data and create reusable components.
+          it offers a simple and efficient way to generate dynamic HTML content.
+          It allows me to seamlessly integrate server-side logic with HTML,
+          making it easier to render dynamic data and create reusable
+          components.
         </p>
         <p>
           User authentication is powered by{" "}

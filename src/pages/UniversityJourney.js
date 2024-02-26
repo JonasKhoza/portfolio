@@ -148,6 +148,36 @@ export default function UniversityJourney() {
           <li>Simple linear regression and correlation.</li>
         </ul>
       </div>
+      <div>
+        <h2>Programming: Contemporary Concepts - COS2614</h2>
+        <ul>
+          <li>Comming soon!</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Structured Systems Analysis and Design - ICT2621</h2>
+        <ul>
+          <li>Comming soon!</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Object-Oriented Analysis - ICT2622</h2>
+        <ul>
+          <li>Comming soon!</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Databases I - INF2603</h2>
+        <ul>
+          <li>Comming soon!</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Visual Programming II - INF2611</h2>
+        <ul>
+          <li>Comming soon!</li>
+        </ul>
+      </div>
     </section>
   );
 }
