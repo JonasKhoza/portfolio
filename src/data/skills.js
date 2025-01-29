@@ -9,44 +9,70 @@ const skills = [
     language: "CSS3",
     useCase: "",
   },
+
   {
     id: 3,
-    language: "Javascript",
-    useCase: "",
-  },
-  {
-    id: 4,
     language: "TypeScript",
     useCase: "",
   },
   {
-    id: 5,
+    id: 4,
     language: "React",
     useCase: "Frontend",
   },
 
   {
-    id: 6,
-    language: "Node js",
+    id: 5,
+    language: "Nodejs",
     useCase: "Backend",
   },
   {
-    id: 7,
+    id: 6,
     language: "Express",
     useCase: "Backend",
   },
-
+  { id: 7, language: "C++", useCase: "Still learning" },
+  { id: 8, language: "Python", useCase: "Still learning" },
   {
-    id: 8,
+    id: 9,
     language: "MongoDB",
     useCase: "Database",
   },
   {
-    id: 9,
-    language: "React Native",
-    useCase: "Still learning",
+    id: 10,
+    language: "PostgreSQL",
+    useCase: "Database",
   },
-  { id: 10, language: "C++", useCase: "Still learning" },
-  { id: 11, language: "Python", useCase: "Still learning" },
+  {
+    id: 11,
+    language: "Docker",
+    useCase: "",
+  },
+  {
+    id: 12,
+    language: "Git",
+    useCase: "",
+  },
+  {
+    id: 13,
+    language: "GitHub Actions",
+    useCase: "",
+  },
+  {
+    id: 14,
+    language: "Consul",
+    useCase: "Backend",
+  },
+  {
+    id: 15,
+    language: "ElasticSearch",
+    useCase: "Backend",
+  },
+
+  // {
+  //   id: 16,
+  //   language: "React Native",
+  //   useCase: "Still learning",
+  // },
 ];
 export default skills;

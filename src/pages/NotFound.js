@@ -5,7 +5,7 @@ function NotFound() {
   return (
     <div className={classes.not_found}>
       <div className={classes.redirect_info}>
-        <h1>Sorry</h1>
+        <h1>Sorry!</h1>
         <h2>I couldn't find that page</h2>
         <p className={classes.redirect_button}>
           Try going back to the

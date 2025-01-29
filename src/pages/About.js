@@ -19,35 +19,24 @@ function About() {
       </p>
       <h1>My quick story</h1>
       <h2>
-        Full-Stack Web Developer with a Drive for Learning and Collaboration
+        Junior Software Engineer | Backend Enthusiast | with a Drive for
+        Learning and Collaboration
       </h2>
       <section className="first-section">
         <p>
-          Greetings! I am a dedicated Full-Stack Web Developer with a burning
-          passion for technology and a relentless drive to learn and grow. My
-          journey into the world of programming began in a community where
-          access to computer resources was limited. However, my determination
-          pushed me to overcome these challenges and pursue my love for
-          technology.
-        </p>
-        <p>
-          Having gained access to computer resources later in life, I embarked
-          on a self-taught journey to master web development. While waiting for
-          my ID, I delved into various online platforms, including{" "}
+          I am a Junior Software Engineer with a deep passion for
+          problem-solving, technology, and a relentless drive to learn and grow.
+          My journey into software development began with a strong curiosity
+          about how systems work under the hood—whether it's programming
+          languages, databases, or network infrastructure. I started learning
+          how to program as a self-taught full-stack software developer via
+          various online platforms, including{" "}
           <span>
             Udemy, SoloLearn, W3Schools, YouTube tutorials, and even a
             Full-Stack Web development course from Academind.com,
           </span>{" "}
-          generously provided by a friend. These resources became my gateway to
+          generously gifted by a friend. These resources became my gateway to
           acquiring the necessary skills and knowledge.
-        </p>
-        <p>
-          Throughout my journey, I have developed a keen eye for detail and a
-          strong desire to understand the "why" behind every problem. I enjoy
-          breaking down complex challenges into manageable pieces, thoroughly
-          analyzing them, and deriving the most fitting solutions.
-          Problem-solving excites me, and I credit my love for solving intricate
-          math problems to an inspiring math teacher.
         </p>
 
         <p>
@@ -73,21 +62,24 @@ function About() {
         </p>
 
         <p>
-          Looking ahead to 2024, I am excited to delve into the world of
-          <span>graphical user interfaces (GUI)</span> with both Python and C++.
-          This next phase of my education will enable me to enhance my skills in
-          creating intuitive and user-friendly interfaces, further enriching my
-          capabilities as a full-stack web developer.
+          Over the years, I have honed my skills in Python, C++, JavaScript,
+          SQL, and modern web technologies through both self-taught exploration
+          and my studies in Informatics at the University of South Africa.
+          <span>My experience</span> spans backend systems, database management,
+          API integrations, and automation, with a strong emphasis on optimizing
+          workflows and building scalable solutions. I enjoy working on projects
+          that challenge me to think critically, whether it’s automating data
+          pipelines, designing robust system architectures, or integrating
+          microservices.
         </p>
 
         <p>
-          While my focus is on software development, my ultimate goal is to
-          become a<span>data scientist.</span> The field of data science
-          fascinates me, as it combines my love for technology with the power of
-          data analysis and insights. Through my studies and practical
-          experience, I aim to acquire the necessary skills in data
-          manipulation, statistical analysis, and machine learning algorithms to
-          make meaningful contributions in this exciting field.
+          Throughout my journey, I have developed a keen eye for detail and a
+          strong desire to understand the "why" behind every problem. I enjoy
+          breaking down complex challenges into manageable pieces, thoroughly
+          analyzing them, and deriving the most fitting solutions.
+          Problem-solving excites me, and I credit my love for solving intricate
+          math problems to an inspiring math teacher.
         </p>
       </section>
       <section className="second-section">

@@ -14,6 +14,11 @@ const AboutPage = lazy(async () => {
   return { default: module.default };
 });
 
+const ScalableEcommercePlatformPage = lazy(async () => {
+  const module = await import("./pages/ScalableEcommercePlatform");
+  return { default: module.default };
+});
+
 const VintagePage = lazy(async () => {
   const module = await import("./pages/Vintage");
   return { default: module.default };
@@ -92,6 +97,29 @@ function App() {
             </Suspense>
           }
         />
+        <Route
+          path="/portfolio/Scalable E-commerce Platform"
+          element={
+            <Suspense
+              fallback={
+                <p
+                  style={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  Loading....
+                </p>
+              }
+            >
+              <ScalableEcommercePlatformPage />
+            </Suspense>
+          }
+        />
+
         <Route
           path="/portfolio/vintage"
           element={

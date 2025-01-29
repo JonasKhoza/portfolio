@@ -1,5 +1,30 @@
 const projects = [
   {
+    id: "Scalable E-commerce Platform",
+    name: "Scalable E-Commerce Platform: A modern, microservices-based e-commerce platform built with Docker. ",
+    role: "PERSONAL PROJECT",
+    description: `
+Under development. Visit my Github page to see progress.
+`,
+
+    image: "/images/projects/Microservice_Architecture.png",
+    languages: {
+      Node: "Node js",
+      Express: "Express",
+      Typescript: "",
+      MongoDB: "MongoDB",
+      Mongoose: "",
+      PostgreSQL: "PostgreSQL",
+      Elastic: "ELK Stack",
+      Nginx: "NGINX",
+      Consul: "Consul",
+      Docker: "Docker & Docker-Compose",
+      GithubActions: "GitHub Actions",
+    },
+    LiveDemo: "",
+    Githubrepo: "https://github.com/JonasKhoza/scalable-ecommerce-platform",
+  },
+  {
     id: "vintage",
     role: "PERSONAL PROJECT",
     name: "Vintage: Your Destination for Tech Treasures and Innovations!",

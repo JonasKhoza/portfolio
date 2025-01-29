@@ -5,7 +5,7 @@ import skills from "../data/skills";
 import "./styles/home.css";
 
 function Home() {
-  document.title = "Jonas Khoza | Full-Stack Web Developer";
+  document.title = "Jonas Khoza | Junior Software Engineer";
   return (
     <div className="home_main">
       <section className="parent">
@@ -24,10 +24,12 @@ function Home() {
               opacity: 1,
             }}
           >
-            I am <span className="name">Jonas Khoza.</span>I am a Full-Stack Web
-            Developer!
-            <br /> I love building calmn interfaces, web apps
-            <br /> and everything in between! I am a life-long learner.
+            I am <span className="name">Jonas Khoza.</span>I am a{" "}
+            <b>Junior Software Engineer!</b>
+            <br /> I hold a strong passion for <b>backend engineering</b> <br />
+            and a keen interest
+            <br /> in uncovering the inner workings of tools and systems.
+            <br />I am a life-long learner.
           </motion.p>
           <img
             src={
@@ -61,13 +63,16 @@ function Home() {
               <p>
                 I have always wanted to play a role in developing advanced tech
                 stuff. I have my eyes set to become a
-                <span className="degree">Data Scientist</span>. <br />
+                <span className="degree">competitive Software Engineer</span>.{" "}
                 <br />
-                But just like many, my journey hasn't been smooth. Access to
-                reliable resources such as stable internet connection and
-                computer resources has always been a predicament. Today I am a
-                self-taught Full-Stack Web Developer through Udemy courses and
-                now enrolled for a
+                <br />
+                But unlike some, I didn't grow up surrounded with computers,
+                rather I grew up with a passion to learn as much as I can about
+                things I could get my hands on. Late in my childhood I got the
+                exposure to tech equipments, and got my self started with
+                self-taught full-stack development courses on Udemy. Today I
+                find myself with a number of projects built, a year and months
+                of corporate working experience, now enrolled for a
                 <span className="degree">
                   Bachelor of Science in Informatics at the University of South
                   Africa 2023.
@@ -98,21 +103,25 @@ function Home() {
               </p>
               <br />
               <p>
-                As a Full-Stack Web Developer, I love bringing together
-                different technologies and harnessing their abilities to produce
-                the desired outcome. With my keen eye for good design, I am able
-                to design and build projects that satisfies the client's needs.
+                As a Software Engineer, I am driven by curiosity and a deep
+                desire to understand how things work beneath the surface.
+                Whether it's a programming language, a framework, or a system
+                like Nginx, I focus on grasping its architecture, components,
+                and internal mechanisms before diving into its syntax. This
+                approach allows me to not just use tools, but to fully leverage
+                their capabilities in solving real-world problems.
               </p>
               <br />
               <p>
                 <span className="hobbies">
                   When I am not in front of the screen
                 </span>
-                , I love trying to come up with solutions mostly tech solutions
-                to solve our african everyday problems, engaging with
-                like-minded people, reading, playing with high school math
-                questions, playing video games and watching football, I am a big
-                Manchester United fan.
+                , I’m exploring emerging technologies, brainstorming innovative
+                tech solutions, or engaging in discussions about software
+                architecture. I’m also passionate about using technology to
+                solve everyday African challenges. Outside of tech, I love
+                reading, playing video games, tackling math problems, and
+                watching football—I'm a big Manchester United fan.
               </p>
               <Link to="/portfolio/about" className="read_more">
                 keep reading my bio...
@@ -164,40 +173,58 @@ function Home() {
                         <li className="title">{project.name}</li>
                         <li>
                           <ol>
-                            {project.languages?.Html.trim() && (
-                              <li>{project.languages?.Html}</li>
+                            {project.languages?.Html?.trim() && (
+                              <li>{project.languages.Html}</li>
                             )}
-                            {project.languages?.CSS.trim() && (
-                              <li>{project.languages?.CSS}</li>
+                            {project.languages?.CSS?.trim() && (
+                              <li>{project.languages.CSS}</li>
                             )}
-                            {project.languages?.JavaScript.trim() && (
-                              <li>{project.languages?.JavaScript}</li>
+                            {project.languages?.JavaScript?.trim() && (
+                              <li>{project.languages.JavaScript}</li>
                             )}
-                            {project.languages?.React.trim() && (
+                            {project.languages?.React?.trim() && (
                               <li>{project.languages.React}</li>
                             )}
-                            {project.languages?.Typescript.trim() && (
-                              <li>{project.languages?.Typescript}</li>
+                            {project.languages?.Typescript?.trim() && (
+                              <li>{project.languages.Typescript}</li>
                             )}
-                            {project.languages?.Node.trim() && (
-                              <li>{project.languages?.Node}</li>
+                            {project.languages?.Node?.trim() && (
+                              <li>{project.languages.Node}</li>
                             )}
-                            {project.languages?.Express.trim() && (
-                              <li>{project.languages?.Express}</li>
+                            {project.languages?.Express?.trim() && (
+                              <li>{project.languages.Express}</li>
                             )}
-                            {project.languages?.Firebase.trim() && (
-                              <li>{project.languages?.Firebase}</li>
+                            {project.languages?.Firebase?.trim() && (
+                              <li>{project.languages.Firebase}</li>
                             )}
-                            {project.languages?.Mongoose.trim() && (
-                              <li>{project.languages?.Mongoose}</li>
+                            {project.languages?.Mongoose?.trim() && (
+                              <li>{project.languages.Mongoose}</li>
                             )}
-                            {project.languages?.MongoDB.trim() && (
-                              <li>{project.languages?.MongoDB}</li>
+                            {project.languages?.MongoDB?.trim() && (
+                              <li>{project.languages.MongoDB}</li>
+                            )}
+                            {project.languages?.PostgreSQL?.trim() && (
+                              <li>{project.languages.PostgreSQL}</li>
+                            )}
+                            {project.languages?.Elastic?.trim() && (
+                              <li>{project.languages.Elastic}</li>
+                            )}
+                            {project.languages?.Nginx?.trim() && (
+                              <li>{project.languages.Nginx}</li>
+                            )}
+                            {project.languages?.Consul?.trim() && (
+                              <li>{project.languages.Consul}</li>
+                            )}
+                            {project.languages?.Docker?.trim() && (
+                              <li>{project.languages.Docker}</li>
+                            )}
+                            {project.languages?.GithubActions?.trim() && (
+                              <li>{project.languages.GithubActions}</li>
                             )}
                           </ol>
                         </li>
                         <li>
-                          <p>{project.description}</p>
+                          <p>{project.description && project.description}</p>
                         </li>
                       </ul>
                       <Link
