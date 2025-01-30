@@ -19,6 +19,11 @@ const ScalableEcommercePlatformPage = lazy(async () => {
   return { default: module.default };
 });
 
+const DbBackupPage = lazy(async () => {
+  const module = await import("./pages/DbBackup");
+  return { default: module.default };
+});
+
 const VintagePage = lazy(async () => {
   const module = await import("./pages/Vintage");
   return { default: module.default };
@@ -116,6 +121,29 @@ function App() {
               }
             >
               <ScalableEcommercePlatformPage />
+            </Suspense>
+          }
+        />
+
+        <Route
+          path="/portfolio/db-backup"
+          element={
+            <Suspense
+              fallback={
+                <p
+                  style={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    fontSize: "1.8rem",
+                  }}
+                >
+                  Loading....
+                </p>
+              }
+            >
+              <DbBackupPage />
             </Suspense>
           }
         />

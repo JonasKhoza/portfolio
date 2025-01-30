@@ -9,7 +9,7 @@ function About() {
       <p className="cv_container">
         Looking for my{" "}
         <a
-          href="https://drive.google.com/file/d/1kpzdr3OFeCwp7Z28_i1-5CduxOzVhsFN/view?usp=sharing"
+          href="https://drive.google.com/file/d/1eusgvNkhPlORqm58D8zLfUv3dwMJXHwT/view?usp=sharing"
           target="_blank"
           rel="noreferrer"
           className="resume"

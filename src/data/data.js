@@ -11,9 +11,9 @@ Under development. Visit my Github page to see progress.
     languages: {
       Node: "Node js",
       Express: "Express",
-      Typescript: "",
+      Typescript: "Typescript",
       MongoDB: "MongoDB",
-      Mongoose: "",
+      Mongoose: "Mongoose",
       PostgreSQL: "PostgreSQL",
       Elastic: "ELK Stack",
       Nginx: "NGINX",
@@ -23,6 +23,31 @@ Under development. Visit my Github page to see progress.
     },
     LiveDemo: "",
     Githubrepo: "https://github.com/JonasKhoza/scalable-ecommerce-platform",
+  },
+  {
+    id: "db-backup",
+    name: "db-backup is a command-line tool (CLI) for database backup and restoration.",
+    role: "WORK & PERSONAL PROJECT",
+    description: `
+db-backup-cli—a command-line utility supporting multi-database backup and restoration (PostgreSQL, MySQL, MongoDB, MSSQL). 
+The goal? Boost efficiency, reduce resources, and make life easier for database admins!
+
+This started as a personal project to improve our backup process, specifically adding compression across all DBMSs but ended up become an efficient tool to my current employer.
+`,
+
+    image: "/images/projects/Screenshot 2025-01-29 175548.png",
+    languages: {
+      Node: "Nodejs",
+      TypeScript: "TypeScript",
+      MongoDB: "MongoDB",
+      Mongoose: "Mongoose",
+      PostgreSQL: "PostgreSQL",
+      MySQL: "MySQL",
+      MSSQL: "MSSQL",
+      Docker: "Docker",
+    },
+    LiveDemo: "",
+    Githubrepo: "https://github.com/JonasKhoza/db-backup-cli",
   },
   {
     id: "vintage",

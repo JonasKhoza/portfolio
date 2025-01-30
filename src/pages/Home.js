@@ -127,7 +127,7 @@ function Home() {
                 keep reading my bio...
               </Link>
               <a
-                href="https://drive.google.com/file/d/1kpzdr3OFeCwp7Z28_i1-5CduxOzVhsFN/view?usp=sharing"
+                href="https://drive.google.com/file/d/1eusgvNkhPlORqm58D8zLfUv3dwMJXHwT/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="resume"
@@ -205,6 +205,13 @@ function Home() {
                             )}
                             {project.languages?.PostgreSQL?.trim() && (
                               <li>{project.languages.PostgreSQL}</li>
+                            )}
+                            {project.languages?.MySQL?.trim() && (
+                              <li>{project.languages.MySQL}</li>
+                            )}
+
+                            {project.languages?.MSSQL?.trim() && (
+                              <li>{project.languages.MSSQL}</li>
                             )}
                             {project.languages?.Elastic?.trim() && (
                               <li>{project.languages.Elastic}</li>

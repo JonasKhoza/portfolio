@@ -40,10 +40,19 @@ function Footer() {
           <li>
             <a
               href="mailto:jonaskhoza18@gmail.com"
-              target="_self"
+              target="_blank"
               rel="noreferrer"
             >
               EMAIL
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jonas-khoza-6a8b03224/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LINKEDIN
             </a>
           </li>
         </ul>
