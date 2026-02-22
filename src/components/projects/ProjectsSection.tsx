@@ -54,7 +54,7 @@ const PROJECTS: ProjectI[] = [
       "CLI Point-of-Sale in C++ — current features: create product, list products. Next: bulk CSV import using std::thread for parallelism.",
     tags: ["C++", "CLI", "multithreading"],
     status: "in-progress",
-    repoUrl: "https://github.com/your-username/mini-pos-cli",
+    repoUrl: "https://github.com/JonasKhoza/mini-pos-cli",
   },
 
   {
@@ -64,7 +64,7 @@ const PROJECTS: ProjectI[] = [
       "A storefront for everyday tech built with React + Node (TypeScript). Focused on clean APIs and a simple product model.",
     tags: ["React", "Node.js", "TypeScript"],
     status: "complete",
-    repoUrl: "https://github.com/your-username/tech-store",
+    repoUrl: "https://github.com/JonasKhoza/Vintage.git",
   },
 ];
 
