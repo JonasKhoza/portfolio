@@ -43,7 +43,7 @@ const PROJECTS: ProjectI[] = [
       "A modular e-commerce platform built with microservices. Each service is containerized and independently deployable. Focused on reliability, observability, and service separation.",
     tags: ["TypeScript", "Node.js", "Docker", "Microservices"],
     status: "complete",
-    repoUrl: "https://github.com/your-username/scalable-ecom",
+    repoUrl: "https://github.com/JonasKhoza/scalable-ecommerce-platform.git",
     notes:
       "Monitoring (Prometheus/Grafana) and service discovery (Consul) are planned.",
   },
