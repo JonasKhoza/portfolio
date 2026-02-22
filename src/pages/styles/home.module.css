@@ -1,0 +1,194 @@
+.home_container {
+  font-family: var(--font-mono);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.home_container .user_introduction_cont {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.home_container .user_introduction_cont .intro_first_child {
+  width: 520px;
+}
+
+.skills_container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skills_container h4 {
+  padding: 0;
+  margin: 0;
+}
+
+.skills_container ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.skills_container ul li {
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 4px;
+  border: 1px solid #e4e4e7;
+  border-radius: 4px;
+}
+
+.experience_cont {
+  min-width: 300px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.experience_cont ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.experience_cont ul li .experience_item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1rem;
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: -2px 1px 8px 2px rgba(193, 193, 193, 0.51);
+  -webkit-box-shadow: -2px 1px 8px 2px rgba(193, 193, 193, 0.51);
+  -moz-box-shadow: -2px 1px 8px 2px rgba(193, 193, 193, 0.51);
+}
+
+.experience_cont ul li .experience_item .title_duration_cont {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience_cont ul li .experience_item .title_duration_cont .title_cont {
+  display: flex;
+  align-items: center;
+  /* background-color: var(--fore-ground);
+  color: var(--white);
+  padding: 4px;
+  border-radius: 2px; */
+  text-underline-offset: 4px;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 0.5px;
+}
+
+.experience_cont
+  ul
+  li
+  .experience_item
+  .title_duration_cont
+  .title_cont
+  span:nth-child(1) {
+  font-weight: 800;
+}
+
+.experience_cont ul li .experience_item .title_duration_cont .duration_cont {
+  display: flex;
+  align-items: center;
+  /* background-color: var(--fore-ground);
+  color: var(--white);
+  padding: 4px;
+  border-radius: 2px; */
+  text-underline-offset: 4px;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 0.5px;
+}
+
+.experience_cont
+  ul
+  li
+  .experience_item
+  .title_duration_cont
+  .duration_cont
+  span:nth-child(1) {
+  font-weight: 800;
+}
+
+.experience_cont ul li .experience_item .company_name_cont {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: rgb(233, 228, 228, 0.5);
+
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.experience_cont ul li .experience_item .company_name_cont span:nth-child(1) {
+  font-weight: 800;
+}
+
+.experience_cont ul li .experience_item .project_summary_cont {
+  font-family: var(--font-sans);
+}
+
+.experience_cont ul li .experience_item .project_summary_cont p {
+  font-style: italic;
+  /* text-underline-offset: 4px;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 2px; */
+}
+
+.experience_cont ul li .experience_item .project_achievements_cont {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.experience_cont ul li .experience_item .project_achievements_cont ol {
+  padding: 0 1rem;
+  width: inherit;
+  list-style: circle;
+  font-family: var(--font-sans);
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.experience_cont ul li .experience_item .project_achievements_cont ol li {
+  list-style: disc;
+}
+
+.experience_cont .project_tools {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.experience_cont .project_tools li {
+  width: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 4px;
+  border: 1px solid #121e27;
+  border-radius: 4px;
+}
+
+.home_container .background_container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

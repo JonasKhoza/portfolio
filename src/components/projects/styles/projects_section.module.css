@@ -1,0 +1,164 @@
+.section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.heading {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.search input {
+  width: 220px;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: transparent;
+}
+
+.select {
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: transparent;
+}
+
+.list {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* .badge {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  text-transform: capitalize;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.badge.complete {
+  background: rgba(0, 0, 0, 0.03);
+}
+.badge['in-progress'] {
+  background: rgba(0, 0, 0, 0.02);
+}
+.badge.prototype {
+  background: rgba(0, 0, 0, 0.01);
+}
+.badge.archived {
+  opacity: 0.6;
+} */
+
+.badge {
+  font-size: 0.7rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  text-transform: capitalize;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Status modifiers */
+.complete {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.inProgress {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.prototype {
+  background: rgba(0, 0, 0, 0.01);
+}
+
+.archived {
+  opacity: 0.6;
+}
+
+.description {
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.link {
+  font-size: 0.85rem;
+  text-decoration: underline;
+  
+}
+
+.notes {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}

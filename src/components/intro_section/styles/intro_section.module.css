@@ -1,0 +1,99 @@
+.section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 4rem;
+}
+
+.introGrid {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  gap: 3rem;
+}
+
+.introText {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume {
+  padding: 0.5rem 0;
+}
+
+.resume .resume_link {
+  color: rgb(23, 23, 99);
+}
+
+@media (max-width: 900px) {
+  .introGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.introText {
+  max-width: 640px;
+}
+
+.heading {
+  font-size: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.lead strong {
+  font-weight: 500;
+}
+
+.contact {
+  margin-top: 1.75rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.contactLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.6;
+}
+
+.email {
+  font-size: 0.95rem;
+  text-decoration: underline;
+}
+
+.skills {
+  align-self: start;
+}
+
+.skillsHeading {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}

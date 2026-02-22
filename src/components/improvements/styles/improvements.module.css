@@ -1,0 +1,25 @@
+.improvements {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.improvements .explanation {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: inside square;
+  list-style: none;
+}
+
+.contribution_graph {
+  display: flex;
+  flex-direction: row;
+}
+
+.contribution_graph p {
+  font-weight: 900;
+}

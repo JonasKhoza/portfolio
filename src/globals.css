@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  --white: #fff;
+  --background: #f6f9fc;
+  --fore-ground: #0a2540;
+  --accent: #635bff;
+  --muted: #e6e6e6;
+  --border: #ece9e9;
+
+  --bg: #f6f9fc;
+  --muted: rgba(0, 0, 0, 0.6);
+  --card: #fff;
+  --border: rgba(0, 0, 0, 0.06);
+
+  -webkit-text-size-adjust: 100%;
+  tab-size: 4;
+  line-height: 1.5;
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+body {
+  margin: 0;
+  padding: 0 2rem;
+  background-color: var(--background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+} */
+
+.active-nav {
+  text-underline-offset: 4px;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 2px;
+}

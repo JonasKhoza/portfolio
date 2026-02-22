@@ -1,0 +1,80 @@
+/* BackgroundSectionSplit.module.css */
+
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem;
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+.header {
+  max-width: 600px;
+  margin-bottom: 3rem;
+}
+
+.heading {
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  opacity: 0.65;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.left {
+  font-size: 1rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.paragraph {
+  line-height: 1.7;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.block {
+  padding-left: 1.25rem;
+  border-left: 2px solid rgba(0, 0, 0, 0.06);
+}
+
+.label {
+  display: block;
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 0.5rem;
+}
+
+.block p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.block strong {
+  font-weight: 500;
+}
