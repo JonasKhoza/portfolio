@@ -23,7 +23,8 @@ export default function IntroSection({ years, skills }: IntroSectionProps) {
             Backend-leaned Software Engineer with <b>{years}+ years </b>
             of experience. Farm boy by background, currently based in
             <strong> Cape Town, South Africa</strong>, with a growing focus on
-            <strong> systems programming in C++</strong>.
+            <strong> systems programming in C++</strong>. Final year{" "}
+            <b>BSc Informatics</b> student at the University of South Africa.
           </p>
 
           <div className={styles.contact}>
@@ -35,7 +36,7 @@ export default function IntroSection({ years, skills }: IntroSectionProps) {
 
           <div className={styles.resume}>
             <a
-              href="https://drive.google.com/file/d/1LieyqSu6HY0MFnsjgTNYfj_3fRwEOtB2/view?usp=sharing"
+              href="https://drive.google.com/file/d/1wAyBg5awExLeLCTWxCg3JxwJzDlXEkWs/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               className={styles.resume_link}
