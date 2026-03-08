@@ -14,7 +14,7 @@ export default function PostsList() {
   const [page, setPage] = useState(1);
 
   useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/posts/posts.json`)
+    fetch(`/posts/posts.json`)
       .then((r) => r.json())
       .then(setPosts)
       .catch(() => setPosts([]));
@@ -27,7 +27,7 @@ export default function PostsList() {
   return (
     <main style={{ maxWidth: 900, margin: "0 auto", padding: "2rem" }}>
       <div>
-        <Link to="/portfolio">← Back to home</Link>
+        <Link to="/">← Back to home</Link>
       </div>
 
       <p style={{ padding: "8px 0" }}>
@@ -43,7 +43,7 @@ export default function PostsList() {
             style={{ padding: "1rem 0", borderBottom: "1px solid #eee" }}
           >
             <h2 style={{ margin: 0 }}>
-              <Link to={`/portfolio/posts/${p.slug}`}>{p.title}</Link>
+              <Link to={`/posts/${p.slug}`}>{p.title}</Link>
             </h2>
             <div style={{ color: "#666", fontSize: 14 }}>
               {p.date ? new Date(p.date).toLocaleString() : ""}
