@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./styles/intro_section.module.css";
 
 interface IntroSectionProps {
@@ -44,6 +45,13 @@ export default function IntroSection({ years, skills }: IntroSectionProps) {
               View my resume
             </a>
             &#128073;
+          </div>
+
+          <div>
+            <Link to="/posts" className={styles.blogLink}>
+              Read my blog here
+            </Link>
+            &#128072;
           </div>
         </header>
 

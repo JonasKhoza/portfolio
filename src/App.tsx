@@ -12,16 +12,43 @@ const HomePage = lazy(async () => {
   return { default: module.default };
 });
 
+const PostsList = lazy(async () => {
+  const module = await import("./pages/PostList");
+  return { default: module.default };
+});
+
+const PostPage = lazy(async () => {
+  const module = await import("./pages/PostPage");
+  return { default: module.default };
+});
+
 function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<Navigate replace to="portfolio" />} />
         <Route
-          path="portfolio"
+          path="/"
           element={
             <Suspense fallback={<LoadingSpinner />}>
               <HomePage />
+            </Suspense>
+          }
+        />
+
+        <Route
+          path="/posts"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <PostsList />
+            </Suspense>
+          }
+        />
+
+        <Route
+          path="/posts/:slug"
+          element={
+            <Suspense fallback={<LoadingSpinner />}>
+              <PostPage />
             </Suspense>
           }
         />

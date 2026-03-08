@@ -114,6 +114,7 @@
 
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./styles/nav_header.module.css";
+import { Link } from "react-router-dom";
 
 type NavItem = { id: string; label: string };
 
@@ -138,14 +139,14 @@ export function NavHeader() {
 
     const discover = () => {
       const byDataNav = Array.from(
-        document.querySelectorAll<HTMLElement>("[data-nav][id]")
+        document.querySelectorAll<HTMLElement>("[data-nav][id]"),
       );
       const nodes: HTMLElement[] = byDataNav.length
         ? byDataNav
         : Array.from(
             document.querySelectorAll<HTMLElement>(
-              'section[id], [role="region"][id], [data-section-id]'
-            )
+              'section[id], [role="region"][id], [data-section-id]',
+            ),
           );
 
       const items = nodes
@@ -192,7 +193,7 @@ export function NavHeader() {
           if (entry.isIntersecting) setActive(entry.target.id);
         });
       },
-      { root: null, rootMargin: "-20% 0px -60% 0px", threshold: 0 }
+      { root: null, rootMargin: "-20% 0px -60% 0px", threshold: 0 },
     );
 
     const toObserve = navItems
@@ -264,6 +265,9 @@ export function NavHeader() {
           <a className={styles.cta} href="mailto:jonaskhoza18@gmail.com">
             Contact
           </a>
+          <Link to="/posts" className={styles.cta} style={{ marginLeft: 12 }}>
+            Blog
+          </Link>
 
           {/* Mobile hamburger */}
           <button

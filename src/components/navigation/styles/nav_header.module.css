@@ -162,6 +162,7 @@
   border: 1px solid var(--border);
   text-decoration: none;
   font-size: 0.95rem;
+  color: rgb(99, 99, 250);
 }
 
 /* Mobile hamburger button */
@@ -181,7 +182,9 @@
 .lineTop,
 .lineMiddle,
 .lineBottom {
-  transition: transform 220ms ease, opacity 160ms ease;
+  transition:
+    transform 220ms ease,
+    opacity 160ms ease;
   transform-box: fill-box;
   transform-origin: center;
 }
