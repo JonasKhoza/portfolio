@@ -23,12 +23,6 @@ const PostPage = lazy(async () => {
 });
 
 function App() {
-  // const params = new URLSearchParams(window.location.search);
-  // const redirect = params.get("redirect");
-
-  // if (redirect) {
-  //   window.history.replaceState(null, "", redirect);
-  // }
   return (
     <Layout>
       <Routes>

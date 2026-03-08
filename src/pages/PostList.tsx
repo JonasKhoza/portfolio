@@ -14,7 +14,7 @@ export default function PostsList() {
   const [page, setPage] = useState(1);
 
   useEffect(() => {
-    fetch(`/posts/posts.json`)
+    fetch(`${process.env.PUBLIC_URL}/posts/posts.json`)
       .then((r) => r.json())
       .then(setPosts)
       .catch(() => setPosts([]));
