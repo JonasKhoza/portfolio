@@ -46,7 +46,7 @@ export default function PostPage() {
 
   useEffect(() => {
     (async () => {
-      const res = await fetch("/posts/posts.json");
+      const res = await fetch(`${process.env.PUBLIC_URL}/posts/posts.json`);
       const allPosts: PostMetaWithSlugI[] = await res.json();
       const postMeta = allPosts.find((p) => p.slug === slug);
       setMeta(postMeta);
@@ -55,7 +55,10 @@ export default function PostPage() {
 
   useEffect(() => {
     if (!slug) return;
-    const candidates = [`/posts/${slug}.md`, `./posts/${slug}.md`];
+    const candidates = [
+      `${process.env.PUBLIC_URL}/posts/${slug}.md`,
+      `${process.env.PUBLIC_URL}/posts/${slug}.md`,
+    ];
 
     (async () => {
       setMd(null);
@@ -87,7 +90,7 @@ export default function PostPage() {
   if (error)
     return (
       <main style={{ maxWidth: 900, margin: "0 auto", padding: "2rem" }}>
-        <Link to="/posts">← Go back</Link>
+        <Link to="/portfolio/posts">← Go back</Link>
         <div style={{ color: "crimson", marginTop: 20 }}>{error}</div>
       </main>
     );
@@ -96,7 +99,7 @@ export default function PostPage() {
 
   return (
     <main style={{ maxWidth: 900, margin: "0 auto", padding: "2rem" }}>
-      <Link to="/posts">← Go back</Link>
+      <Link to="/portfolio/posts">← Go back</Link>
 
       <article style={{ marginTop: 20 }}>
         <ReactMarkdown

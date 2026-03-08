@@ -1,5 +1,6 @@
 {
-  "homepage": "https://jonaskhoza.github.io",
+  "homepage": "https://jonaskhoza.github.io/portfolio",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

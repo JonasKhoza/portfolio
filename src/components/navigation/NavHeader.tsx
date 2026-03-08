@@ -265,7 +265,11 @@ export function NavHeader() {
           <a className={styles.cta} href="mailto:jonaskhoza18@gmail.com">
             Contact
           </a>
-          <Link to="/posts" className={styles.cta} style={{ marginLeft: 12 }}>
+          <Link
+            to="/portfolio/posts"
+            className={styles.cta}
+            style={{ marginLeft: 12 }}
+          >
             Blog
           </Link>
 

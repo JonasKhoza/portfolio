@@ -23,17 +23,17 @@ const PostPage = lazy(async () => {
 });
 
 function App() {
-  const params = new URLSearchParams(window.location.search);
-  const redirect = params.get("redirect");
+  // const params = new URLSearchParams(window.location.search);
+  // const redirect = params.get("redirect");
 
-  if (redirect) {
-    window.history.replaceState(null, "", redirect);
-  }
+  // if (redirect) {
+  //   window.history.replaceState(null, "", redirect);
+  // }
   return (
     <Layout>
       <Routes>
         <Route
-          path="/"
+          path="/portfolio"
           element={
             <Suspense fallback={<LoadingSpinner />}>
               <HomePage />
@@ -42,7 +42,7 @@ function App() {
         />
 
         <Route
-          path="/posts"
+          path="/portfolio/posts"
           element={
             <Suspense fallback={<LoadingSpinner />}>
               <PostsList />
@@ -51,7 +51,7 @@ function App() {
         />
 
         <Route
-          path="/posts/:slug"
+          path="/portfolio/posts/:slug"
           element={
             <Suspense fallback={<LoadingSpinner />}>
               <PostPage />
