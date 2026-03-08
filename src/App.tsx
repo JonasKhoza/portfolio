@@ -4,7 +4,7 @@ import React, { lazy, Suspense } from "react";
 
 //User-modules
 import Layout from "./components/layout/Layout";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import LoadingSpinner from "./components/loading/LoadingSpinner";
 
 const HomePage = lazy(async () => {
