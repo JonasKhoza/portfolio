@@ -191,26 +191,37 @@ export default function PostPage() {
   const [md, setMd] = useState<string | null>(null);
   const [meta, setMeta] = useState<PostMeta | null | undefined>(undefined);
   const [error, setError] = useState<string | null>(null);
+  const [loadingMd, setLoadingMd] = useState(false);
+  const [loadingMeta, setLoadingMeta] = useState(false);
+
   const PUBLIC = process.env.PUBLIC_URL || "";
 
-  // Load posts.json and set meta (if any)
+  // Load posts.json and set meta if it exists
   useEffect(() => {
     if (!slug) return;
+    setLoadingMeta(true);
+    setError(null);
+
+    const url = `${PUBLIC}/posts/posts.json`;
+    console.debug("[PostPage] fetching posts.json:", url);
+
     (async () => {
       try {
-        const res = await fetch(`${PUBLIC}/posts/posts.json`, {
-          cache: "no-store",
-        });
+        const res = await fetch(url, { cache: "no-store" });
+        console.debug("[PostPage] posts.json status:", res.status);
         if (!res.ok) {
-          setMeta(undefined);
+          setMeta(null);
+          setLoadingMeta(false);
           return;
         }
         const allPosts: PostMetaWithSlugI[] = await res.json();
-        const postMeta = allPosts.find((p) => p.slug === slug);
-        setMeta(postMeta ?? null);
+        const p = allPosts.find((x) => x.slug === slug);
+        setMeta(p ?? null);
       } catch (err) {
-        // keep meta undefined on failure
+        console.error("[PostPage] error fetching posts.json", err);
         setMeta(null);
+      } finally {
+        setLoadingMeta(false);
       }
     })();
   }, [slug, PUBLIC]);
@@ -218,36 +229,57 @@ export default function PostPage() {
   // Load the markdown content
   useEffect(() => {
     if (!slug) return;
+    setLoadingMd(true);
+    setError(null);
+    setMd(null);
 
     const url = `${PUBLIC}/posts/${slug}.md`;
+    console.debug("[PostPage] fetching md:", url);
 
     (async () => {
-      setMd(null);
-      setError(null);
-
       try {
         const res = await fetch(url, { cache: "no-store" });
+        console.debug(
+          "[PostPage] md status:",
+          res.status,
+          "url:",
+          url,
+          "content-type:",
+          res.headers.get("content-type"),
+        );
         if (!res.ok) {
           setError("Post not found — check public/posts and slug filename.");
           return;
         }
         const text = await res.text();
-        // strip front-matter
         const content = text.replace(/^---[\s\S]+?---/, "").trim();
         setMd(content);
       } catch (err) {
+        console.error("[PostPage] error fetching md", err);
         setError("Error loading post.");
+      } finally {
+        setLoadingMd(false);
       }
     })();
   }, [slug, PUBLIC]);
 
-  if (error)
+  // Show spinner until we either have md or both loaders finished and we have an error
+  if (
+    loadingMd ||
+    loadingMeta ||
+    (!md && !error && (loadingMd || loadingMeta))
+  ) {
+    return <LoadingSpinner />;
+  }
+
+  if (error && !md) {
     return (
       <main style={{ maxWidth: 900, margin: "0 auto", padding: "2rem" }}>
         <Link to="/posts">← Go back</Link>
         <div style={{ color: "crimson", marginTop: 20 }}>{error}</div>
       </main>
     );
+  }
 
   if (!md) return <LoadingSpinner />;
 
