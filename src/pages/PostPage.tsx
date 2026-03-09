@@ -245,7 +245,7 @@ export default function PostPage() {
 
     (async () => {
       try {
-        const res = await fetch(url, { cache: "no-store" });
+        const res = await fetch(mdUrl, { cache: "no-store" });
         console.debug(
           "[PostPage] md status:",
           res.status,
