@@ -1,6 +1,6 @@
 ---
 title: "Configure Global WSL2 Settings on Windows"
-date: "2026-03-08T20:00:00"
+date: "2026-03-06T20:00:00"
 excerpt: "Learn how to control memory, CPU cores, and swap usage for WSL2 by creating a .wslconfig file on Windows."
 tags:
   - wsl
