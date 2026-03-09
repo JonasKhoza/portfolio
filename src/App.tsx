@@ -27,7 +27,7 @@ function App() {
     <Layout>
       <Routes>
         <Route
-          path="/portfolio/"
+          path="/"
           element={
             <Suspense fallback={<LoadingSpinner />}>
               <HomePage />
@@ -36,7 +36,7 @@ function App() {
         />
 
         <Route
-          path="/portfolio/posts"
+          path="/posts"
           element={
             <Suspense fallback={<LoadingSpinner />}>
               <PostsList />
@@ -45,7 +45,7 @@ function App() {
         />
 
         <Route
-          path="/portfolio/posts/:slug"
+          path="/posts/:slug"
           element={
             <Suspense fallback={<LoadingSpinner />}>
               <PostPage />

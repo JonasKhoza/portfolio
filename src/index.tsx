@@ -12,11 +12,10 @@ import "./globals.css";
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );
-const basename = process.env.PUBLIC_URL;
 
 root.render(
   <React.StrictMode>
-    <HashRouter basename="/portfolio">
+    <HashRouter>
       <App />
     </HashRouter>
   </React.StrictMode>,
