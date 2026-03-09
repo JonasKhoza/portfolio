@@ -204,13 +204,10 @@ export default function PostPage() {
     setError(null);
     const base = (process.env.PUBLIC_URL || "").replace(/\/$/, "");
     const postsJsonUrl = `${base}/posts/posts.json`;
-    console.debug("[PostPage] fetching posts.json:", postsJsonUrl);
-    console.log("[PostPage] fetching posts.json:", postsJsonUrl);
 
     (async () => {
       try {
         const res = await fetch(postsJsonUrl, { cache: "no-store" });
-        console.debug("[PostPage] posts.json status:", res.status);
         if (!res.ok) {
           setMeta(null);
           setLoadingMeta(false);
@@ -220,7 +217,6 @@ export default function PostPage() {
         const p = allPosts.find((x) => x.slug === slug);
         setMeta(p ?? null);
       } catch (err) {
-        console.error("[PostPage] error fetching posts.json", err);
         setMeta(null);
       } finally {
         setLoadingMeta(false);
@@ -239,21 +235,11 @@ export default function PostPage() {
     const mdUrl = `${base}/posts/${slug}.md`;
 
     const raw = `https://raw.githubusercontent.com/jonaskhoza/portfolio/main/public/posts/${slug}.md`;
-    console.log("POST FETCHING MD: ", mdUrl);
-    console.debug("[PostPage] fetching md:", mdUrl);
-    console.log("RAW: ", raw);
 
     (async () => {
       try {
         const res = await fetch(raw, { cache: "no-store" });
-        console.debug(
-          "[PostPage] md status:",
-          res.status,
-          "url:",
-          mdUrl,
-          "content-type:",
-          res.headers.get("content-type"),
-        );
+
         if (!res.ok) {
           setError("Post not found — check public/posts and slug filename.");
           return;
@@ -262,7 +248,6 @@ export default function PostPage() {
         const content = text.replace(/^---[\s\S]+?---/, "").trim();
         setMd(content);
       } catch (err) {
-        console.error("[PostPage] error fetching md", err);
         setError("Error loading post.");
       } finally {
         setLoadingMd(false);
