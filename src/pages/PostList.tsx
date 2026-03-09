@@ -14,6 +14,10 @@ export default function PostsList() {
   const [page, setPage] = useState(1);
 
   useEffect(() => {
+    console.log(
+      "Fetching posts metadata...",
+      `${process.env.PUBLIC_URL}/posts/posts.json`,
+    );
     fetch(`${process.env.PUBLIC_URL}/posts/posts.json`)
       .then((r) => r.json())
       .then(setPosts)

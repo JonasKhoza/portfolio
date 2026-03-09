@@ -202,8 +202,6 @@ export default function PostPage() {
     if (!slug) return;
     setLoadingMeta(true);
     setError(null);
-
-    // const url = `${PUBLIC}/#/posts/posts.json`;
     const base = (process.env.PUBLIC_URL || "").replace(/\/$/, "");
     const postsJsonUrl = `${base}/posts/posts.json`;
     console.debug("[PostPage] fetching posts.json:", postsJsonUrl);
@@ -239,9 +237,8 @@ export default function PostPage() {
 
     const base = (process.env.PUBLIC_URL || "").replace(/\/$/, "");
     const mdUrl = `${base}/posts/${slug}.md`;
-    const url = `${PUBLIC}/#/posts/${slug}.md`;
-    console.log("POST FETCHING MD: ", url);
-    console.debug("[PostPage] fetching md:", url);
+    console.log("POST FETCHING MD: ", mdUrl);
+    console.debug("[PostPage] fetching md:", mdUrl);
 
     (async () => {
       try {
@@ -250,7 +247,7 @@ export default function PostPage() {
           "[PostPage] md status:",
           res.status,
           "url:",
-          url,
+          mdUrl,
           "content-type:",
           res.headers.get("content-type"),
         );
