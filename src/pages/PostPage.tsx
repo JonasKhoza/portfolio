@@ -202,7 +202,7 @@ export default function PostPage() {
     setLoadingMeta(true);
     setError(null);
 
-    const url = `${PUBLIC}/posts/posts.json`;
+    const url = `${PUBLIC}/#/posts/posts.json`;
     console.debug("[PostPage] fetching posts.json:", url);
 
     (async () => {
@@ -233,7 +233,7 @@ export default function PostPage() {
     setError(null);
     setMd(null);
 
-    const url = `${PUBLIC}/posts/${slug}.md`;
+    const url = `${PUBLIC}/#/posts/${slug}.md`;
     console.debug("[PostPage] fetching md:", url);
 
     (async () => {
