@@ -32,7 +32,7 @@ CPU: 4 cores of 4 cores available in host
 PostgreSQL: 17 (Docker container)
 ```
 
-<i>Learn more about how to configure wsl2 global settings on [this post](/posts/configure-global-wsl2-settings).</i>
+<i>Learn more about how to configure wsl2 global settings on [this post](https://jonaskhoza.github.io/portfolio/#/posts/configure-global-wsl2-settings).</i>
 </br></br>
 I tuned PostgreSQL with fairly large memory settings because some reporting queries are heavy.
 </br></br>
