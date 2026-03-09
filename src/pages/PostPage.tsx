@@ -195,6 +195,7 @@ export default function PostPage() {
   const [loadingMeta, setLoadingMeta] = useState(false);
 
   const PUBLIC = process.env.PUBLIC_URL || "";
+  // replace your url builders with this
 
   // Load posts.json and set meta if it exists
   useEffect(() => {
@@ -202,13 +203,15 @@ export default function PostPage() {
     setLoadingMeta(true);
     setError(null);
 
-    const url = `${PUBLIC}/#/posts/posts.json`;
-    console.debug("[PostPage] fetching posts.json:", url);
-    console.log("[PostPage] fetching posts.json:", url);
+    // const url = `${PUBLIC}/#/posts/posts.json`;
+    const base = (process.env.PUBLIC_URL || "").replace(/\/$/, "");
+    const postsJsonUrl = `${base}/posts/posts.json`;
+    console.debug("[PostPage] fetching posts.json:", postsJsonUrl);
+    console.log("[PostPage] fetching posts.json:", postsJsonUrl);
 
     (async () => {
       try {
-        const res = await fetch(url, { cache: "no-store" });
+        const res = await fetch(postsJsonUrl, { cache: "no-store" });
         console.debug("[PostPage] posts.json status:", res.status);
         if (!res.ok) {
           setMeta(null);
@@ -234,6 +237,8 @@ export default function PostPage() {
     setError(null);
     setMd(null);
 
+    const base = (process.env.PUBLIC_URL || "").replace(/\/$/, "");
+    const mdUrl = `${base}/posts/${slug}.md`;
     const url = `${PUBLIC}/#/posts/${slug}.md`;
     console.log("POST FETCHING MD: ", url);
     console.debug("[PostPage] fetching md:", url);
