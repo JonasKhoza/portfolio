@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 //Third-party modules
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import "highlight.js/styles/github-dark.css";
 
 //User-modules
@@ -16,8 +16,8 @@ const basename = process.env.PUBLIC_URL;
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={basename}>
+    <HashRouter basename="/portfolio">
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
 );
