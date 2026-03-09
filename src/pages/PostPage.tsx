@@ -204,6 +204,7 @@ export default function PostPage() {
 
     const url = `${PUBLIC}/#/posts/posts.json`;
     console.debug("[PostPage] fetching posts.json:", url);
+    console.log("[PostPage] fetching posts.json:", url);
 
     (async () => {
       try {
@@ -234,6 +235,7 @@ export default function PostPage() {
     setMd(null);
 
     const url = `${PUBLIC}/#/posts/${slug}.md`;
+    console.log("POST FETCHING MD: ", url);
     console.debug("[PostPage] fetching md:", url);
 
     (async () => {
