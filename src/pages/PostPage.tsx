@@ -237,12 +237,15 @@ export default function PostPage() {
 
     const base = (process.env.PUBLIC_URL || "").replace(/\/$/, "");
     const mdUrl = `${base}/posts/${slug}.md`;
+
+    const raw = `https://raw.githubusercontent.com/jonaskhoza/portfolio/main/public/posts/${slug}.md`;
     console.log("POST FETCHING MD: ", mdUrl);
     console.debug("[PostPage] fetching md:", mdUrl);
+    console.log("RAW: ", raw);
 
     (async () => {
       try {
-        const res = await fetch(mdUrl, { cache: "no-store" });
+        const res = await fetch(raw, { cache: "no-store" });
         console.debug(
           "[PostPage] md status:",
           res.status,
