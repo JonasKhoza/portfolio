@@ -1,6 +1,6 @@
 ---
 title: "Debugging a Dockerized PostgreSQL: 𝘤𝘰𝘶𝘭𝘥 𝘯𝘰𝘵 𝘳𝘦𝘴𝘪𝘻𝘦 𝘴𝘩𝘢𝘳𝘦𝘥 𝘮𝘦𝘮𝘰𝘳𝘺 𝘴𝘦𝘨𝘮𝘦𝘯𝘵 “/𝘗𝘰𝘴𝘵𝘨𝘳𝘦𝘚𝘘𝘓...” 𝘵𝘰 16 𝘔𝘉: 𝘕𝘰 𝘴𝘱𝘢𝘤𝘦 𝘭𝘦𝘧𝘵 𝘰𝘯 𝘥𝘦𝘷𝘪𝘤𝘦"
-date: "2026-03-07T14:00:00"
+date: "2026-03-07T21:30:00"
 excerpt: "How a top-sellers report revealed /dev/shm limits, parallel workers, and why you should size Docker’s shared memory."
 tags:
   - postgresql
